@@ -1,0 +1,370 @@
+
+ Property  job 1 : Henry law coefficients H ;
+ Settings  job 1 : T= 303.15 K ; x(1)= 0.1667 x(2)= 0.1667 x(3)= 0.6667 ;
+ Units     job 1 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 1 : Free energy of solvation in molar frame ; Solvent density = 1457.786 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.59976416
+   2 br_anion                                        NA                NA              NA      -68.44828653
+   3 pfpa_1                                  2.2838E-05       -6.72817182     19.08398527       -9.48785093
+
+ Property  job 2 : Henry law coefficients H ;
+ Settings  job 2 : T= 303.15 K ; x(1)= 0.1250 x(2)= 0.1250 x(3)= 0.7500 ;
+ Units     job 2 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 2 : Free energy of solvation in molar frame ; Solvent density = 1509.994 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.20118177
+   2 br_anion                                        NA                NA              NA      -74.71258623
+   3 pfpa_1                                  0.00015391       -4.82024944     19.08398527       -8.33964216
+
+ Property  job 3 : Henry law coefficients H ;
+ Settings  job 3 : T= 303.15 K ; x(1)= 0.1000 x(2)= 0.1000 x(3)= 0.8000 ;
+ Units     job 3 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 3 : Free energy of solvation in molar frame ; Solvent density = 1541.457 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.14487183
+   2 br_anion                                        NA                NA              NA      -84.78109321
+   3 pfpa_1                                  0.00169429       -2.42158611     19.08398527       -6.89535297
+
+ Property  job 4 : Henry law coefficients H ;
+ Settings  job 4 : T= 303.15 K ; x(1)= 0.0714 x(2)= 0.0714 x(3)= 0.8571 ;
+ Units     job 4 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 4 : Free energy of solvation in molar frame ; Solvent density = 1577.539 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.26815046
+   2 br_anion                                        NA                NA              NA      -93.67614927
+   3 pfpa_1                                  0.00821385       -0.84302777     19.08398527       -5.94522727
+
+ Property  job 5 : Henry law coefficients H ;
+ Settings  job 5 : T= 303.15 K ; x(1)= 0.0500 x(2)= 0.0500 x(3)= 0.9000 ;
+ Units     job 5 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 5 : Free energy of solvation in molar frame ; Solvent density = 1604.668 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.35760617
+   2 br_anion                                        NA                NA              NA      -98.02318115
+   3 pfpa_1                                  0.01374692       -0.32803460     19.08398527       -5.63560952
+
+ Property  job 6 : Henry law coefficients H ;
+ Settings  job 6 : T= 303.15 K ; x(1)= 0.0238 x(2)= 0.0238 x(3)= 0.9524 ;
+ Units     job 6 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 6 : Free energy of solvation in molar frame ; Solvent density = 1637.903 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.45878678
+   2 br_anion                                        NA                NA              NA     -101.91148286
+   3 pfpa_1                                  0.01798923       -0.05907611     19.08398527       -5.47434812
+
+ Property  job 7 : Henry law coefficients H ;
+ Settings  job 7 : T= 303.15 K ; x(1)= 0.3333 x(2)= 0.3333 x(3)= 0.3333 ;
+ Units     job 7 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 7 : Free energy of solvation in molar frame ; Solvent density = 1251.107 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -43.14520675
+   2 br_anion                                        NA                NA              NA      -65.44173608
+   3 pfpa_1                                  5.1451E-06       -8.21855033     19.08398527      -10.38112843
+
+ Property  job 8 : Henry law coefficients H ;
+ Settings  job 8 : T= 303.15 K ; x(1)= 0.2500 x(2)= 0.2500 x(3)= 0.5000 ;
+ Units     job 8 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 8 : Free energy of solvation in molar frame ; Solvent density = 1354.036 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -43.08179398
+   2 br_anion                                        NA                NA              NA      -65.83308377
+   3 pfpa_1                                  7.2590E-06       -7.87436909     19.08398527      -10.17605188
+
+ Property  job 9 : Henry law coefficients H ;
+ Settings  job 9 : T= 303.15 K ; x(1)= 0.2000 x(2)= 0.2000 x(3)= 0.6000 ;
+ Units     job 9 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 9 : Free energy of solvation in molar frame ; Solvent density = 1416.184 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.85283772
+   2 br_anion                                        NA                NA              NA      -66.83668506
+   3 pfpa_1                                  1.2051E-05       -7.36742227     19.08398527       -9.87202788
+
+ Property  job 10 : Henry law coefficients H ;
+ Settings  job 10 : T= 303.15 K ; x(1)= 0.1429 x(2)= 0.1429 x(3)= 0.7143 ;
+ Units     job 10 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 10 : Free energy of solvation in molar frame ; Solvent density = 1487.589 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.37223412
+   2 br_anion                                        NA                NA              NA      -70.89476420
+   3 pfpa_1                                  5.1511E-05       -5.91481497     19.08398527       -8.99853018
+
+ Property  job 11 : Henry law coefficients H ;
+ Settings  job 11 : T= 303.15 K ; x(1)= 0.1111 x(2)= 0.1111 x(3)= 0.7778 ;
+ Units     job 11 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 11 : Free energy of solvation in molar frame ; Solvent density = 1527.458 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.12972353
+   2 br_anion                                        NA                NA              NA      -80.03427707
+   3 pfpa_1                                  0.00058768       -3.48042264     19.08398527       -7.53289767
+
+ Property  job 12 : Henry law coefficients H ;
+ Settings  job 12 : T= 303.15 K ; x(1)= 0.0909 x(2)= 0.0909 x(3)= 0.8182 ;
+ Units     job 12 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 12 : Free energy of solvation in molar frame ; Solvent density = 1552.926 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.18086828
+   2 br_anion                                        NA                NA              NA      -88.12175263
+   3 pfpa_1                                  0.00328624       -1.75910667     19.08398527       -6.49652533
+
+ Property  job 13 : Henry law coefficients H ;
+ Settings  job 13 : T= 303.15 K ; x(1)= 0.0833 x(2)= 0.0833 x(3)= 0.8333 ;
+ Units     job 13 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 13 : Free energy of solvation in molar frame ; Solvent density = 1562.492 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.21492994
+   2 br_anion                                        NA                NA              NA      -90.51360406
+   3 pfpa_1                                  0.00502926       -1.33357656     19.08398527       -6.24039742
+
+ Property  job 14 : Henry law coefficients H ;
+ Settings  job 14 : T= 303.15 K ; x(1)= 0.0769 x(2)= 0.0769 x(3)= 0.8462 ;
+ Units     job 14 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 14 : Free energy of solvation in molar frame ; Solvent density = 1570.592 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.24385826
+   2 br_anion                                        NA                NA              NA      -92.29827266
+   3 pfpa_1                                  0.00670535       -1.04594438     19.08398527       -6.06730841
+
+ Property  job 15 : Henry law coefficients H ;
+ Settings  job 15 : T= 303.15 K ; x(1)= 0.0667 x(2)= 0.0667 x(3)= 0.8667 ;
+ Units     job 15 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 15 : Free energy of solvation in molar frame ; Solvent density = 1583.562 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.28873181
+   2 br_anion                                        NA                NA              NA      -94.77081635
+   3 pfpa_1                                  0.00952784       -0.69463115     19.08398527       -5.85596883
+
+ Property  job 16 : Henry law coefficients H ;
+ Settings  job 16 : T= 303.15 K ; x(1)= 0.0625 x(2)= 0.0625 x(3)= 0.8750 ;
+ Units     job 16 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 16 : Free energy of solvation in molar frame ; Solvent density = 1588.835 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.30638529
+   2 br_anion                                        NA                NA              NA      -95.66161291
+   3 pfpa_1                                  0.01065558       -0.58276586     19.08398527       -5.78870032
+
+ Property  job 17 : Henry law coefficients H ;
+ Settings  job 17 : T= 303.15 K ; x(1)= 0.0588 x(2)= 0.0588 x(3)= 0.8824 ;
+ Units     job 17 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 17 : Free energy of solvation in molar frame ; Solvent density = 1593.490 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.32170516
+   2 br_anion                                        NA                NA              NA      -96.40117463
+   3 pfpa_1                                  0.01161834       -0.49626462     19.08398527       -5.73669738
+
+ Property  job 18 : Henry law coefficients H ;
+ Settings  job 18 : T= 303.15 K ; x(1)= 0.0556 x(2)= 0.0556 x(3)= 0.8889 ;
+ Units     job 18 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 18 : Free energy of solvation in molar frame ; Solvent density = 1597.629 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.33513662
+   2 br_anion                                        NA                NA              NA      -97.02552747
+   3 pfpa_1                                  0.01244005       -0.42792803     19.08398527       -5.69562532
+
+ Property  job 19 : Henry law coefficients H ;
+ Settings  job 19 : T= 303.15 K ; x(1)= 0.0526 x(2)= 0.0526 x(3)= 0.8947 ;
+ Units     job 19 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 19 : Free energy of solvation in molar frame ; Solvent density = 1601.333 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.34701698
+   2 br_anion                                        NA                NA              NA      -97.56006631
+   3 pfpa_1                                  0.01314310       -0.37295274     19.08398527       -5.66259236
+
+ Property  job 20 : Henry law coefficients H ;
+ Settings  job 20 : T= 303.15 K ; x(1)= 0.0455 x(2)= 0.0455 x(3)= 0.9091 ;
+ Units     job 20 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 20 : Free energy of solvation in molar frame ; Solvent density = 1610.430 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.37568432
+   2 br_anion                                        NA                NA              NA      -98.78640384
+   3 pfpa_1                                  0.01471951       -0.25967572     19.08398527       -5.59456136
+
+ Property  job 21 : Henry law coefficients H ;
+ Settings  job 21 : T= 303.15 K ; x(1)= 0.0417 x(2)= 0.0417 x(3)= 0.9167 ;
+ Units     job 21 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 21 : Free energy of solvation in molar frame ; Solvent density = 1615.233 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.39056090
+   2 br_anion                                        NA                NA              NA      -99.39006840
+   3 pfpa_1                                  0.01545734       -0.21076578     19.08398527       -5.56520756
+
+ Property  job 22 : Henry law coefficients H ;
+ Settings  job 22 : T= 303.15 K ; x(1)= 0.0385 x(2)= 0.0385 x(3)= 0.9231 ;
+ Units     job 22 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 22 : Free energy of solvation in molar frame ; Solvent density = 1619.299 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.40302615
+   2 br_anion                                        NA                NA              NA      -99.87996383
+   3 pfpa_1                                  0.01602771       -0.17453018     19.08398527       -5.54347206
+
+ Property  job 23 : Henry law coefficients H ;
+ Settings  job 23 : T= 303.15 K ; x(1)= 0.0357 x(2)= 0.0357 x(3)= 0.9286 ;
+ Units     job 23 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 23 : Free energy of solvation in molar frame ; Solvent density = 1622.786 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.41362743
+   2 br_anion                                        NA                NA              NA     -100.28574714
+   3 pfpa_1                                  0.01647640       -0.14692056     19.08398527       -5.52691968
+
+ Property  job 24 : Henry law coefficients H ;
+ Settings  job 24 : T= 303.15 K ; x(1)= 0.0333 x(2)= 0.0333 x(3)= 0.9333 ;
+ Units     job 24 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 24 : Free energy of solvation in molar frame ; Solvent density = 1625.808 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.42275676
+   2 br_anion                                        NA                NA              NA     -100.62751695
+   3 pfpa_1                                  0.01683497       -0.12539151     19.08398527       -5.51401967
+
+ Property  job 25 : Henry law coefficients H ;
+ Settings  job 25 : T= 303.15 K ; x(1)= 0.0312 x(2)= 0.0312 x(3)= 0.9375 ;
+ Units     job 25 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 25 : Free energy of solvation in molar frame ; Solvent density = 1628.452 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.43070271
+   2 br_anion                                        NA                NA              NA     -100.91940046
+   3 pfpa_1                                  0.01712560       -0.10827501     19.08398527       -5.50376918
+
+ Property  job 26 : Henry law coefficients H ;
+ Settings  job 26 : T= 303.15 K ; x(1)= 0.0294 x(2)= 0.0294 x(3)= 0.9412 ;
+ Units     job 26 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 26 : Free energy of solvation in molar frame ; Solvent density = 1630.787 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.43768263
+   2 br_anion                                        NA                NA              NA     -101.17163015
+   3 pfpa_1                                  0.01736418       -0.09443983     19.08398527       -5.49548828
+
+ Property  job 27 : Henry law coefficients H ;
+ Settings  job 27 : T= 303.15 K ; x(1)= 0.0278 x(2)= 0.0278 x(3)= 0.9444 ;
+ Units     job 27 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 27 : Free energy of solvation in molar frame ; Solvent density = 1632.862 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.44386343
+   2 br_anion                                        NA                NA              NA     -101.39180611
+   3 pfpa_1                                  0.01756228       -0.08309623     19.08398527       -5.48870239
+
+ Property  job 28 : Henry law coefficients H ;
+ Settings  job 28 : T= 303.15 K ; x(1)= 0.0263 x(2)= 0.0263 x(3)= 0.9474 ;
+ Units     job 28 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 28 : Free energy of solvation in molar frame ; Solvent density = 1634.719 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.44937553
+   2 br_anion                                        NA                NA              NA     -101.58569508
+   3 pfpa_1                                  0.01772845       -0.07367904     19.08398527       -5.48307199
+
+ Property  job 29 : Henry law coefficients H ;
+ Settings  job 29 : T= 303.15 K ; x(1)= 0.0250 x(2)= 0.0250 x(3)= 0.9500 ;
+ Units     job 29 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 29 : Free energy of solvation in molar frame ; Solvent density = 1636.390 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.45432230
+   2 br_anion                                        NA                NA              NA     -101.75775392
+   3 pfpa_1                                  0.01786913       -0.06577498     19.08398527       -5.47834887
+
+ Property  job 30 : Henry law coefficients H ;
+ Settings  job 30 : T= 303.15 K ; x(1)= 0.1220 x(2)= 0.1220 x(3)= 0.7561 ;
+ Units     job 30 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 30 : Free energy of solvation in molar frame ; Solvent density = 1513.824 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.17756311
+   2 br_anion                                        NA                NA              NA      -75.69195247
+   3 pfpa_1                                  0.00019959       -4.56035410     19.08398527       -8.18316198
+
+ Property  job 31 : Henry law coefficients H ;
+ Settings  job 31 : T= 303.15 K ; x(1)= 0.1190 x(2)= 0.1190 x(3)= 0.7619 ;
+ Units     job 31 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 31 : Free energy of solvation in molar frame ; Solvent density = 1517.474 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.15851154
+   2 br_anion                                        NA                NA              NA      -76.73552653
+   3 pfpa_1                                  0.00026139       -4.29057410     19.08398527       -8.02072323
+
+ Property  job 32 : Henry law coefficients H ;
+ Settings  job 32 : T= 303.15 K ; x(1)= 0.1163 x(2)= 0.1163 x(3)= 0.7674 ;
+ Units     job 32 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 32 : Free energy of solvation in molar frame ; Solvent density = 1520.955 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.14427937
+   2 br_anion                                        NA                NA              NA      -77.82494752
+   3 pfpa_1                                  0.00034394       -4.01613484     19.08398527       -7.85547407
+
+ Property  job 33 : Henry law coefficients H ;
+ Settings  job 33 : T= 303.15 K ; x(1)= 0.1136 x(2)= 0.1136 x(3)= 0.7727 ;
+ Units     job 33 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 33 : Free energy of solvation in molar frame ; Solvent density = 1524.280 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.13481645
+   2 br_anion                                        NA                NA              NA      -78.93414172
+   3 pfpa_1                                  0.00045161       -3.74378121     19.08398527       -7.69147802
+
+ Property  job 34 : Henry law coefficients H ;
+ Settings  job 34 : T= 303.15 K ; x(1)= 0.1087 x(2)= 0.1087 x(3)= 0.7826 ;
+ Units     job 34 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 34 : Free energy of solvation in molar frame ; Solvent density = 1530.500 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.12832885
+   2 br_anion                                        NA                NA              NA      -81.10004176
+   3 pfpa_1                                  0.00075369       -3.23162874     19.08398527       -7.38308843
+
+ Property  job 35 : Henry law coefficients H ;
+ Settings  job 35 : T= 303.15 K ; x(1)= 0.1064 x(2)= 0.1064 x(3)= 0.7872 ;
+ Units     job 35 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 35 : Free energy of solvation in molar frame ; Solvent density = 1533.413 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.12984419
+   2 br_anion                                        NA                NA              NA      -82.11382206
+   3 pfpa_1                                  0.00094939       -3.00078918     19.08398527       -7.24409248
+
+ Property  job 36 : Henry law coefficients H ;
+ Settings  job 36 : T= 303.15 K ; x(1)= 0.1042 x(2)= 0.1042 x(3)= 0.7917 ;
+ Units     job 36 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 36 : Free energy of solvation in molar frame ; Solvent density = 1536.205 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.13351175
+   2 br_anion                                        NA                NA              NA      -83.06635161
+   3 pfpa_1                                  0.00117314       -2.78916851     19.08398527       -7.11667174
+
+ Property  job 37 : Henry law coefficients H ;
+ Settings  job 37 : T= 303.15 K ; x(1)= 0.1020 x(2)= 0.1020 x(3)= 0.7959 ;
+ Units     job 37 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 37 : Free energy of solvation in molar frame ; Solvent density = 1538.885 g/l ;
+ 
+  Nr Compound                                         H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylphosphonium_cation                 NA                NA              NA      -42.13868883
+   2 br_anion                                        NA                NA              NA      -83.95494511
+   3 pfpa_1                                  0.00142242       -2.59648882     19.08398527       -7.00065893
