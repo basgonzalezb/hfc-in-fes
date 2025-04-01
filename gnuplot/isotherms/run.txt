@@ -57,10 +57,10 @@ p CSMO.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:3 w lp lc rgb COLORS[1] pt -1 lw
   MDYN.HFC[i]."_".DES[1].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[1] ps PS pt PT lw LW ,\
   MDYN.HFC[i]."_".DES[2].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[2] ps PS pt PT lw LW ,\
   MDYN.HFC[i]."_".DES[3].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[3] ps PS pt PT lw LW ,\
-  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 1 u 1:2 lc rgb COLORS[2] ps PS pt 7 lw LW
+  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[2] ps PS pt 7 lw LW
 
 
 #set ytics format ''
@@ -74,12 +74,14 @@ p CSMO.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:3 w lp lc rgb COLORS[1] pt -1 lw
   CSMO.HFC[i]."+".DES[3].RDES.".txt" skip 1 u 1:3 w lp lc rgb COLORS[3] pt -1 lw LW ,\
   MDYN.HFC[i]."_".DES[1].RDES.".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
   MDYN.HFC[i]."_".DES[2].RDES.".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
+  MDYN.HFC[i]."_".DES[3].RDES.".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
   MDYN.HFC[i]."_".DES[1].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[1] ps PS pt PT lw LW ,\
   MDYN.HFC[i]."_".DES[2].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[2] ps PS pt PT lw LW ,\
-  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 1 u 1:2 lc rgb COLORS[2] ps PS pt 7 lw LW
+  MDYN.HFC[i]."_".DES[3].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[3] ps PS pt PT lw LW ,\
+  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[2] ps PS pt 7 lw LW
 
 
 #set ytics format ''
@@ -93,15 +95,50 @@ p CSMO.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:3 w lp lc rgb COLORS[1] pt -1 lw
   CSMO.HFC[i]."+".DES[3].RDES.".txt" skip 1 u 1:3 w lp lc rgb COLORS[3] pt -1 lw LW ,\
   MDYN.HFC[i]."_".DES[1].RDES.".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
   MDYN.HFC[i]."_".DES[2].RDES.".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
+  MDYN.HFC[i]."_".DES[3].RDES.".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
   MDYN.HFC[i]."_".DES[1].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[1] ps PS pt PT lw LW ,\
   MDYN.HFC[i]."_".DES[2].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[2] ps PS pt PT lw LW ,\
-  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\
-  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 1 u 1:2 lc rgb COLORS[2] ps PS pt 7 lw LW
+  MDYN.HFC[i]."_".DES[3].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[3] ps PS pt PT lw LW ,\
+  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[2] ps PS pt 7 lw LW
 
 
 unset term
 unset output
 replot
 
+
+
+
+
+PS = 1
+set xlabel "{/:Italic x_{1}} / mol·mol^{-1}" offset 0,.5 font "Times New Roman, 11"
+set ylabel "{/:Italic P} / MPa" offset 0, 0 rotate by 90 font "Times New Roman, 11"
+set xrange [0.0:0.6]
+set yrange [0.0:0.6]
+set xtics 0.2 format "%.1f" scale 2 offset 0,0 font "Times New Roman, 9"
+set ytics 0.2 format "%.1f" scale 2 offset 0,0 font "Times New Roman, 9"
+set term pdfcairo size 6.47cm,4.85cm fontscale 0.75
+#set term pdfcairo size 7.2cm,5.4cm fontscale 0.75
+set output "r134a.pdf"
+i = 2
+unset label 1
+p CSMO.HFC[i]."+".DES[1].RDES.".txt" skip 1 u 1:3 w lp lc rgb COLORS[1] pt -1 lw LW ,\
+  CSMO.HFC[i]."+".DES[2].RDES.".txt" skip 1 u 1:3 w lp lc rgb COLORS[2] pt -1 lw LW ,\
+  CSMO.HFC[i]."+".DES[3].RDES.".txt" skip 1 u 1:3 w lp lc rgb COLORS[3] pt -1 lw LW ,\
+  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc -1 ps 1.2 pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc -1 ps 1.2 pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\
+  DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[2] ps PS pt 7 lw LW ,\
+  MDYN.HFC[i]."_".DES[1].RDES.".out" skip 1 u 1:2 lc -1 ps 1.2 pt PT lw LW ,\
+  MDYN.HFC[i]."_".DES[2].RDES.".out" skip 1 u 1:2 lc -1 ps 1.2 pt PT lw LW ,\
+  MDYN.HFC[i]."_".DES[3].RDES.".out" skip 1 u 1:2 lc -1 ps 1.2 pt PT lw LW ,\
+  MDYN.HFC[i]."_".DES[1].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[1] ps PS pt PT lw LW ,\
+  MDYN.HFC[i]."_".DES[2].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[2] ps PS pt PT lw LW ,\
+  MDYN.HFC[i]."_".DES[3].RDES.".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[3] ps PS pt PT lw LW
+
+unset term
+unset output
+replot
