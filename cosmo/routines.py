@@ -122,3 +122,62 @@ def ReadCOSMOthermIsotherm(filename):
                 x1.append(float(line.split()[0])), y1.append(float(line.split()[-2])), ptot.append(float(line.split()[4])*pconversion)
                 data[(temperature, compound)] = [x1, y1, ptot]
     return data
+
+def ReadCOSMOthermDensity(filename):
+    data = {}
+    xHBA, density = [], []
+    temperature = None
+    start_reading = False
+    with open(filename, 'r') as file:
+        for line in file:
+            if 'Property' in line:
+                start_reading = False
+            elif 'Settings' in line:
+                temperature = float(line.split('=')[1].split()[0])
+            elif 'Units' in line:
+                d_units = line.split('Density')[1].split()[1]
+                if d_units == 'g/cm^3':
+                    dconversion = 1
+                else:
+                    raise ValueError('Density units not recognized')
+            elif 'x1' in line:
+                start_reading = True
+                continue
+            if start_reading and line.strip():
+                density.append(float(line.split()[-2]))
+                for i in range(len(line.split())):
+                    if float(line.split()[i]) != 0:
+                        xHBA.append(float(line.split()[i])*2)
+                        break
+                data[(temperature)] = [xHBA, density]
+    return data
+
+def ReadCOSMOthermExcess(filename):
+    data = {}
+    compound = ''
+    temperature = None
+    start_reading = False
+    with open(filename, 'r') as file:
+        for line in file:
+            if 'Property' in line:
+                start_reading = False
+                x1, he, ge, he_mf, he_hb, he_vdw, he_conf = [], [], [], [], [], [], []
+            elif 'Compounds' in line:
+                compound = line.split(':')[1].split()[0]
+            elif 'Settings' in line:
+                temperature = float(line.split('=')[1].split()[0])
+            elif 'Units' in line:
+                e_units = line.split(';')[0].split()[-1]
+                if e_units == 'kcal/mol':
+                    econversion = 4.184
+                elif e_units == 'kJ/mol':
+                    econversion = 1.0
+            elif 'x1' in line:
+                start_reading = True
+                continue
+            if start_reading and line.strip():
+                x1.append(float(line.split()[0])), he.append(float(line.split()[2])*econversion), ge.append(float(line.split()[3])*econversion)
+                he_mf.append(float(line.split()[-5])*econversion), he_hb.append(float(line.split()[-4])*econversion)
+                he_vdw.append(float(line.split()[-3])*econversion), he_conf.append(float(line.split()[-1])*econversion)
+                data[(temperature, compound)] = [x1, he, ge, he_mf, he_hb, he_vdw, he_conf]
+    return data

@@ -1,0 +1,5 @@
+# from https://doi.org/10.1021/acs.iecr.0c01893
+# HFC	KH/MPa
+  R32    1.219
+R134a	 0.973
+ R125	 1.490

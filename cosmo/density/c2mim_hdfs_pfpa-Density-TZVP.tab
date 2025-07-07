@@ -1,0 +1,49 @@
+
+ Property  job 1 : Liquid density and volume ;
+ Settings  job 1 : T= 303.15 K ;
+ Units     job 1 : Energies in kJ/mol ; Area in nm^2 ; Volume in nm^3 ; Density in g/cm^3 ; Concentrations x : mole fraction ;
+ 
+          x1          x2          x3          x4          x5          x6          x7          x8          x9         x10          Density            Volume
+ 0.000000000 0.000000000 0.000000000 0.200000000 0.200000000 0.000000000 0.000000000 0.000000000 0.000000000 0.600000000       1.63597041        0.28469775
+
+ Property  job 2 : Liquid density and volume ;
+ Settings  job 2 : T= 303.15 K ;
+ Units     job 2 : Energies in kJ/mol ; Area in nm^2 ; Volume in nm^3 ; Density in g/cm^3 ; Concentrations x : mole fraction ;
+ 
+          x1          x2          x3          x4          x5          x6          x7          x8          x9         x10          Density            Volume
+ 0.000000000 0.000000000 0.000000000 0.222222222 0.222222222 0.000000000 0.000000000 0.000000000 0.000000000 0.555555556       1.63269332        0.28712691
+
+ Property  job 3 : Liquid density and volume ;
+ Settings  job 3 : T= 303.15 K ;
+ Units     job 3 : Energies in kJ/mol ; Area in nm^2 ; Volume in nm^3 ; Density in g/cm^3 ; Concentrations x : mole fraction ;
+ 
+          x1          x2          x3          x4          x5          x6          x7          x8          x9         x10          Density            Volume
+ 0.000000000 0.000000000 0.000000000 0.250000000 0.250000000 0.000000000 0.000000000 0.000000000 0.000000000 0.500000000       1.62867412        0.29016337
+
+ Property  job 4 : Liquid density and volume ;
+ Settings  job 4 : T= 303.15 K ;
+ Units     job 4 : Energies in kJ/mol ; Area in nm^2 ; Volume in nm^3 ; Density in g/cm^3 ; Concentrations x : mole fraction ;
+ 
+          x1          x2          x3          x4          x5          x6          x7          x8          x9         x10          Density            Volume
+ 0.000000000 0.000000000 0.000000000 0.285714286 0.285714286 0.000000000 0.000000000 0.000000000 0.000000000 0.428571429       1.62362853        0.29406737
+
+ Property  job 5 : Liquid density and volume ;
+ Settings  job 5 : T= 303.15 K ;
+ Units     job 5 : Energies in kJ/mol ; Area in nm^2 ; Volume in nm^3 ; Density in g/cm^3 ; Concentrations x : mole fraction ;
+ 
+          x1          x2          x3          x4          x5          x6          x7          x8          x9         x10          Density            Volume
+ 0.000000000 0.000000000 0.000000000 0.333333333 0.333333333 0.000000000 0.000000000 0.000000000 0.000000000 0.333333333       1.61710585        0.29927272
+
+ Property  job 6 : Liquid density and volume ;
+ Settings  job 6 : T= 303.15 K ;
+ Units     job 6 : Energies in kJ/mol ; Area in nm^2 ; Volume in nm^3 ; Density in g/cm^3 ; Concentrations x : mole fraction ;
+ 
+          x1          x2          x3          x4          x5          x6          x7          x8          x9         x10          Density            Volume
+ 0.000000000 0.000000000 0.000000000 0.400000000 0.400000000 0.000000000 0.000000000 0.000000000 0.000000000 0.200000000       1.60834623        0.30656020
+
+ Property  job 7 : Liquid density and volume ;
+ Settings  job 7 : T= 303.15 K ;
+ Units     job 7 : Energies in kJ/mol ; Area in nm^2 ; Volume in nm^3 ; Density in g/cm^3 ; Concentrations x : mole fraction ;
+ 
+          x1          x2          x3          x4          x5          x6          x7          x8          x9         x10          Density            Volume
+ 0.000000000 0.000000000 0.000000000 0.476190476 0.476190476 0.000000000 0.000000000 0.000000000 0.000000000 0.047619048       1.59883171        0.31488876
