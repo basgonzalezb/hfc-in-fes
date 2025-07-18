@@ -42,6 +42,7 @@ unset ytics
 unset k
 
 set palette defined (0 "#fafafa", 0.25 "#2c7bb6", 0.50 "#43aa8b", 0.75 "#f9c74f", 1 "#d7191c")
+set palette defined (0 "white", 0.25 "#2c7bb6", 0.50 "#43aa8b", 0.75 "#f9c74f", 1 "#d7191c")
 set pm3d interpolate 3,3 map
 unset colorbox
 do for [i=1:1] {

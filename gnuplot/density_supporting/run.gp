@@ -42,7 +42,7 @@ unset k
 do for [i=1:2] {
   set label 1 LABELS[i] at graph 0.10, 0.85
   set term epslatex size 8cm,6cm fontscale 0.75
-  set output "figures/density_fdes".i.".tex"
+  set output "figures/density_fdes".i."_molar.tex"
   p DATA.DES[i].RDES[1].".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
     DATA.DES[i].RDES[2].".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
     DATA.DES[i].RDES[3].".txt" skip 1 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
@@ -71,7 +71,7 @@ do for [i=1:2] {
   set yrange [Y1[i]:Y2[i]]
   set ytics 0.1 format "%.1f" scale 2 offset 0,    0
   set term epslatex size 8cm,6cm fontscale 0.75
-  set output "figures/density_fdes".i.".tex"
+  set output "figures/density_fdes".i."_mass.tex"
 #  set term pdfcairo size 8cm,6cm fontscale 0.75
 #  set output "figures/density_fdes".i.".pdf"
   p DATA.DES[i].RDES[1].".txt" skip 1 u 1:($2*MW[i+k+0]/1000) lc -1 ps 2.5 pt 7 lw LW ,\

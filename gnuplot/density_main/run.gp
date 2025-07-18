@@ -69,7 +69,8 @@ unset output
 replot
 
 YLABEL		= "$\\hat{\\rho}$ / g$\\cdot$cm$^{-3}$"
-set yrange [1.2:2.0]
+set label 1 "a)" at graph 0.10, 0.15
+set yrange [1.2:1.8]
 set ylabel YLABEL offset -2, 0 rotate by 90
 set ytics 0.2 format "%.1f" scale 2 offset 0,    0
 unset k

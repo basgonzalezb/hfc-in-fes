@@ -24,7 +24,7 @@ set border lw 1.5
 set size ratio RATIO
 
 set xrange [0.0:0.4]
-set yrange [0.0:2.0]
+set yrange [0.0:1.5]
 set xlabel XLABEL offset 0, -1
 set ylabel YLABEL offset -2, 0 rotate by 90
 set xtics 0.1 format "%.1f" scale 2 offset 0, -0.5
@@ -33,19 +33,13 @@ set mxtics 2
 set mytics 2
 unset k
 
-set label 1 "b)" at graph 0.10, 0.85
+set label 1 "b)" at graph 0.10, 0.15
 set term epslatex size 8cm,6cm fontscale 0.75
 set output "figures/activity_coef-pfpa.tex"
-p CSMO.DES[1].".out" skip 1 w lp lc rgb COLORS[1] pt -1 lw LW dt 1 ,\
-  CSMO.DES[2].".out" skip 1 w lp lc rgb COLORS[2] pt -1 lw LW dt 1 ,\
-  CSMO.DES[3].".out" skip 1 w lp lc rgb COLORS[3] pt -1 lw LW dt 1 ,\
-  MDYN.DES[1].".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
-  MDYN.DES[2].".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
-  MDYN.DES[3].".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
-  MDYN.DES[1].".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[1] ps PS pt PT lw LW ,\
-  MDYN.DES[2].".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[2] ps PS pt PT lw LW ,\
-  MDYN.DES[3].".out" skip 1 u 1:2:3 w errorbars lc rgb COLORS[3] ps PS pt PT lw LW
+plot \
+  for [i=1:3] CSMO.DES[i].".out" skip 1 w l lc rgb COLORS[i] lw LW ,\
+  for [i=1:3] MDYN.DES[i].".out" skip 1 u 1:2 every 1::0::3 lc -1 ps 2.5 pt PT lw LW ,\
+  for [i=1:3] MDYN.DES[i].".out" skip 1 u 1:2:3 every 1::0::3 w errorbars lc rgb COLORS[i] ps PS pt PT lw LW
 unset term
 unset output
 replot
-
