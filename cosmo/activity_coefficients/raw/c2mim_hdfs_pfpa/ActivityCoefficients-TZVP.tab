@@ -358,3 +358,23 @@
    1 perfluorooctanesulfonate_anion                      NA                NA              NA      -61.32051764
    2 1-ethyl-3-methyl-imidazolium_cation                 NA                NA              NA      -45.88571411
    3 pfpa_1                                      0.00689562       -1.01796285     19.08398527       -6.02765426
+
+ Property  job 37 : Henry law coefficients H ;
+ Settings  job 37 : T= 303.15 K ; x(1)= 0.4545 x(2)= 0.4545 x(3)= 0.0909 ;
+ Units     job 37 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 37 : Free energy of solvation in molar frame ; Solvent density = 1601.234 g/l ;
+ 
+  Nr Compound                                             H         ln(gamma)              pv             Gsolv
+   1 perfluorooctanesulfonate_anion                      NA                NA              NA      -52.11412939
+   2 1-ethyl-3-methyl-imidazolium_cation                 NA                NA              NA      -47.42526406
+   3 pfpa_1                                      0.00021957       -4.46492917     19.08398527       -8.02481902
+
+ Property  job 38 : Henry law coefficients H ;
+ Settings  job 38 : T= 303.15 K ; x(1)= 0.4950 x(2)= 0.4950 x(3)= 9.9010E-03 ;
+ Units     job 38 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 38 : Free energy of solvation in molar frame ; Solvent density = 1596.283 g/l ;
+ 
+  Nr Compound                                             H         ln(gamma)              pv             Gsolv
+   1 perfluorooctanesulfonate_anion                      NA                NA              NA      -52.08728463
+   2 1-ethyl-3-methyl-imidazolium_cation                 NA                NA              NA      -47.43116012
+   3 pfpa_1                                      0.00020587       -4.52933753     19.08398527       -8.05513666

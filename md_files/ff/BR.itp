@@ -1,0 +1,10 @@
+; Charges has been scaled by 0.8
+
+
+[ moleculetype ]
+; name       nrexcl
+BR               3
+
+[ atoms ]
+;  nr   type  resnr  residu  atom   cgnr    charge
+    1   Br        1  BR      Br        1   -0.800000

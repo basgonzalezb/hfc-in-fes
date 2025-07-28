@@ -1,0 +1,9 @@
+[ atomtypes ]
+; name  at.nr     mass    charge  ptype  sigma        epsilon
+DM2C        6  12.0110     0.214      A  3.15000E-01  4.53970E-01
+DM2F        9  18.9984    -0.204      A  2.97500E-01  3.32579E-01
+DM2H        1   1.0080     0.097      A  2.17000E-01  0.83145E-01
+
+[ nonbond_params ]
+; i   j func       sigma     epsilon
+DM2H DM2F  1 2.30000E-01 1.85911E-01

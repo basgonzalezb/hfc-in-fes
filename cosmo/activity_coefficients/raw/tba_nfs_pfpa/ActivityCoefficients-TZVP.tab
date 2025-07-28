@@ -368,3 +368,23 @@
    1 tetra-n-butylammonium_cation                   NA                NA              NA      -43.12407449
    2 perfluorobutanesulfonate_anion                 NA                NA              NA      -59.31683317
    3 pfpa_1                                 0.00651614       -1.07456779     19.08398527       -6.03197091
+
+ Property  job 38 : Henry law coefficients H ;
+ Settings  job 38 : T= 303.15 K ; x(1)= 0.4545 x(2)= 0.4545 x(3)= 0.0909 ;
+ Units     job 38 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 38 : Free energy of solvation in molar frame ; Solvent density = 1198.211 g/l ;
+ 
+  Nr Compound                                        H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylammonium_cation                   NA                NA              NA      -44.18042564
+   2 perfluorobutanesulfonate_anion                 NA                NA              NA      -49.38727229
+   3 pfpa_1                                 0.00012822       -5.00286519     19.08398527       -8.24013407
+
+ Property  job 39 : Henry law coefficients H ;
+ Settings  job 39 : T= 303.15 K ; x(1)= 0.4950 x(2)= 0.4950 x(3)= 9.9010E-03 ;
+ Units     job 39 : Energies in kcal/mol ; Pressure in mbar ; Henry constant in bar ; Concentrations x : mole fraction ;
+ General   job 39 : Free energy of solvation in molar frame ; Solvent density = 1169.572 g/l ;
+ 
+  Nr Compound                                        H         ln(gamma)              pv             Gsolv
+   1 tetra-n-butylammonium_cation                   NA                NA              NA      -44.17998960
+   2 perfluorobutanesulfonate_anion                 NA                NA              NA      -49.35130732
+   3 pfpa_1                                 0.00011980       -5.07081571     19.08398527       -8.26528046

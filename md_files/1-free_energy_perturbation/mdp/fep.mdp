@@ -1,0 +1,54 @@
+
+integrator            	= sd
+dt                    	= 0.001
+nsteps                	= 50000000
+comm-mode              	= Linear		; remove center of mass translation
+
+nstenergy               = 5000			; group(s) to write to energy file
+nstlog                  = 500000		; freq to write energies to log file  
+nstxout-compressed      = 500000		; freq to write coordinates to xtc trajectory
+
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.20
+
+pbc                     = xyz
+
+coulombtype             = PME
+rcoulomb                = 1.20
+fourierspacing          = 0.12
+
+vdwtype                 = Cut-off
+vdw-modifier		    = Potential-shift
+rvdw_switch		        = 1.00
+rvdw                    = 1.20
+DispCorr	        	= EnerPres
+
+tc-grps                 = System
+tau_t                   = 1.0
+ref_t                   = 303.15
+
+pcoupl                  = parrinello-rahman
+pcoupltype              = isotropic
+tau_p                   = 2.0
+ref_p                   = 1.01
+compressibility         = 4.5e-5
+nstpcouple		        = 1
+
+constraint_algorithm    = LINCS
+constraints             = hbonds
+
+free_energy		        = yes
+init_lambda_state	    = LAMBDA
+calc-lambda-neighbors	= -1
+vdw-lambdas		        = 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.10 0.20 0.30 0.40 0.45 0.50 0.55 0.60 0.65 0.70 0.80 0.90 0.95 1.00
+coul-lambdas	    	= 0.00 0.05 0.10 0.15 0.20 0.30 0.40 0.60 0.80 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00
+couple-moltype	    	= DECOUPLE
+couple-lambda0	    	= vdw-q
+couple-lambda1	    	= none
+couple-intramol	    	= no
+nstdhdl			        = 100
+sc-alpha	        	= 0.5
+sc-coul		        	= no
+sc-power	        	= 1
+sc-sigma	        	= 0.3
