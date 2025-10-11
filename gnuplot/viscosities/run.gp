@@ -14,9 +14,7 @@ MDYN		= "../../md_analysis/viscosities/"
 
 array DES[3]	= ["c2mim_hdfs_pfpa", "tba_nfs_pfpa", "tbp_br_pfpa"]
 RDES   = "[1_2]"
-array COLORS[3]	= ["#00798c", "#d1495b", "#edae49"]
 array COLORS[3]	= ["#005da4", "#29a4c3", "#57aa29"]
-GRAY	  	= "#adadad"
 array HFC[3]	= ["R32", "R134a", "R125"]
 
 set lmargin at screen 0.266
@@ -53,8 +51,6 @@ plot \
   MDYN.HFC[3]."_".DES[1].RDES.".out" skip 1 u (2.20):2:3 w boxerrorbars lw LW lc rgb COLORS[1] ,\
   MDYN.HFC[3]."_".DES[2].RDES.".out" skip 1 u (2.40):2:3 w boxerrorbars lw LW lc rgb COLORS[2] ,\
   MDYN.HFC[3]."_".DES[3].RDES.".out" skip 1 u (2.60):2:3 w boxerrorbars lw LW lc rgb COLORS[3]
-#  for [i=1:3] for [j=1:3] MDYN.HFC[i]."_".DES[j].RDES.".out" skip 1 u ((i-1+j/5)):2:3 w boxerrorbars lw LW lc rgb COLORS[j] ,\
-#  for [i=1:3] MDYN.DES[i].RDES.".out" skip 1 u ((3+i/5)):2:3 w boxerrorbars lw LW lc rgb COLORS[i]
 unset term
 unset output
 replot

@@ -17,7 +17,6 @@ DATA		= "../../experimental/isotherms/"
 
 array DES[3]	= ["c2mim_hdfs_pfpa", "tba_nfs_pfpa", "tbp_br_pfpa"]
 RDES		= "[1_2]"
-array COLORS[3]	= ["#00798c", "#d1495b", "#edae49"]
 array COLORS[3]	= ["#005da4", "#29a4c3", "#57aa29"]
 array HFC[3]	= ["R32", "R134a", "R125"]
 
@@ -62,20 +61,3 @@ do for [i=1:3] {
   unset output
   replot
 }
-
-unset label 1
-unset xlabel
-unset ylabel
-unset margin
-unset xtics
-unset ytics
-set key noautotitle at graph 0.97, .75 font "Aptos, 18" reverse
-set style fill solid 0.5 border -1
-set term pdf size 15cm, 10cm
-set output "legend.pdf"
-p 0,0 w boxes lw LW lc rgb COLORS[1] fillstyle pattern 3 title "[C2M][HDFS]:PFPA (1:2)" ,\
-  0,0 w boxes lw LW lc rgb COLORS[2] fillstyle pattern 3 title "[TBA][NFS]:PFPA (1:2)" ,\
-  0,0 w boxes lw LW lc rgb COLORS[3] fillstyle pattern 3 title "[TBP]Br:PFPA (1:2)"
-unset term
-unset output
-replot
