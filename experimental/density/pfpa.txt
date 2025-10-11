@@ -1,3 +1,4 @@
+# from NIST (Sinitsyn, E. N. et al., 1980, VINITI, 1516-80 Saturated vapor pressure, vapor and liquid densities at saturation line, and critical parameters of perfluorovaleric acid and of its fluoro- and chloroanhydrides)
 # T/K	rhoL/g/cm3
 301.74	1.6902
 311.84	1.6699
