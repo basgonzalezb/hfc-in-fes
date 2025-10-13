@@ -2,6 +2,7 @@ reset
 set encoding utf8
 
 T		= "303.15"
+PARAM		= "TZVP"
 RATIO		= 0.8
 LW		= 4
 PT		= 5
@@ -10,7 +11,6 @@ PS		= 2
 XLABEL		= "HFC"
 YLABEL		= "$K_H$ / MPa"
 
-PARAM		= "TZVP"
 CSMO		= "../../cosmo/henry_constants/"
 MDYN		= "../../md_analysis/henry_constants/"
 DATA		= "../../experimental/henry_constants/"
@@ -40,43 +40,43 @@ set pointintervalbox 0
 set label 1 "a)" at graph 0.10, 0.85
 set term epslatex size 8cm,6cm fontscale 0.75
 set output "figures/henry_constants-".PARAM.".tex"
-p CSMO.DES[1].RDES."-".PARAM.".txt" skip 1 u (0.20):2 every 1::0::0 w boxes              lw LW lc rgb COLORS[1] ,\
+p CSMO.DES[1].RDES."-".PARAM.".out" skip 1 u (0.20):2 every 1::0::0 w boxes              lw LW lc rgb COLORS[1] ,\
   DATA.DES[1].RDES.".txt"           skip 1 u (0.20):2 every 1::0::0 pt 7  lw LW ps 2.5 lc -1 ,\
   DATA.DES[1].RDES.".txt"           skip 1 u (0.20):2 every 1::0::0 pt 7  lw LW ps PS  lc rgb COLORS[1] ,\
   MDYN.DES[1].RDES.".txt" 	    skip 1 u (0.20):2 every 1::0::0 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[1].RDES.".txt" 	    skip 1 u (0.20):2 every 1::0::0 pt PT lw LW ps PS  lc rgb COLORS[1] ,\
-  CSMO.DES[2].RDES."-".PARAM.".txt" skip 1 u (0.40):2 every 1::0::0 w boxes              lw LW lc rgb COLORS[2] ,\
+  CSMO.DES[2].RDES."-".PARAM.".out" skip 1 u (0.40):2 every 1::0::0 w boxes              lw LW lc rgb COLORS[2] ,\
   DATA.DES[2].RDES.".txt"           skip 1 u (0.40):2 every 1::0::0 pt 7  lw LW ps 2.5 lc -1 ,\
   DATA.DES[2].RDES.".txt"           skip 1 u (0.40):2 every 1::0::0 pt 7  lw LW ps PS  lc rgb COLORS[2] ,\
   MDYN.DES[2].RDES.".txt" 	    skip 1 u (0.40):2 every 1::0::0 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[2].RDES.".txt" 	    skip 1 u (0.40):2 every 1::0::0 pt PT lw LW ps PS  lc rgb COLORS[2] ,\
-  CSMO.DES[3].RDES."-".PARAM.".txt" skip 1 u (0.60):2 every 1::0::0 w boxes              lw LW lc rgb COLORS[3] ,\
+  CSMO.DES[3].RDES."-".PARAM.".out" skip 1 u (0.60):2 every 1::0::0 w boxes              lw LW lc rgb COLORS[3] ,\
   MDYN.DES[3].RDES.".txt" 	    skip 1 u (0.60):2 every 1::0::0 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[3].RDES.".txt" 	    skip 1 u (0.60):2 every 1::0::0 pt PT lw LW ps PS  lc rgb COLORS[3] ,\
-  CSMO.DES[1].RDES."-".PARAM.".txt" skip 1 u (1.20):2 every 1::1::1 w boxes              lw LW lc rgb COLORS[1] ,\
+  CSMO.DES[1].RDES."-".PARAM.".out" skip 1 u (1.20):2 every 1::1::1 w boxes              lw LW lc rgb COLORS[1] ,\
   DATA.DES[1].RDES.".txt"           skip 1 u (1.20):2 every 1::1::1 pt 7  lw LW ps 2.5 lc -1 ,\
   DATA.DES[1].RDES.".txt"           skip 1 u (1.20):2 every 1::1::1 pt 7  lw LW ps PS  lc rgb COLORS[1] ,\
   MDYN.DES[1].RDES.".txt" 	    skip 1 u (1.20):2 every 1::1::1 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[1].RDES.".txt" 	    skip 1 u (1.20):2 every 1::1::1 pt PT lw LW ps PS  lc rgb COLORS[1] ,\
-  CSMO.DES[2].RDES."-".PARAM.".txt" skip 1 u (1.40):2 every 1::1::1 w boxes              lw LW lc rgb COLORS[2] ,\
+  CSMO.DES[2].RDES."-".PARAM.".out" skip 1 u (1.40):2 every 1::1::1 w boxes              lw LW lc rgb COLORS[2] ,\
   DATA.DES[2].RDES.".txt"           skip 1 u (1.40):2 every 1::1::1 pt 7  lw LW ps 2.5 lc -1 ,\
   DATA.DES[2].RDES.".txt"           skip 1 u (1.40):2 every 1::1::1 pt 7  lw LW ps PS  lc rgb COLORS[2] ,\
   MDYN.DES[2].RDES.".txt" 	    skip 1 u (1.40):2 every 1::1::1 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[2].RDES.".txt" 	    skip 1 u (1.40):2 every 1::1::1 pt PT lw LW ps PS  lc rgb COLORS[2] ,\
-  CSMO.DES[3].RDES."-".PARAM.".txt" skip 1 u (1.60):2 every 1::1::1 w boxes              lw LW lc rgb COLORS[3] ,\
+  CSMO.DES[3].RDES."-".PARAM.".out" skip 1 u (1.60):2 every 1::1::1 w boxes              lw LW lc rgb COLORS[3] ,\
   MDYN.DES[3].RDES.".txt" 	    skip 1 u (1.60):2 every 1::1::1 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[3].RDES.".txt" 	    skip 1 u (1.60):2 every 1::1::1 pt PT lw LW ps PS  lc rgb COLORS[3] ,\
-  CSMO.DES[1].RDES."-".PARAM.".txt" skip 1 u (2.20):2 every 1::2::2 w boxes              lw LW lc rgb COLORS[1] ,\
+  CSMO.DES[1].RDES."-".PARAM.".out" skip 1 u (2.20):2 every 1::2::2 w boxes              lw LW lc rgb COLORS[1] ,\
   DATA.DES[1].RDES.".txt"           skip 1 u (2.20):2 every 1::2::2 pt 7  lw LW ps 2.5 lc -1 ,\
   DATA.DES[1].RDES.".txt"           skip 1 u (2.20):2 every 1::2::2 pt 7  lw LW ps PS  lc rgb COLORS[1] ,\
   MDYN.DES[1].RDES.".txt" 	    skip 1 u (2.20):2 every 1::2::2 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[1].RDES.".txt"   	    skip 1 u (2.20):2 every 1::2::2 pt PT lw LW ps PS  lc rgb COLORS[1] ,\
-  CSMO.DES[2].RDES."-".PARAM.".txt" skip 1 u (2.40):2 every 1::2::2 w boxes              lw LW lc rgb COLORS[2] ,\
+  CSMO.DES[2].RDES."-".PARAM.".out" skip 1 u (2.40):2 every 1::2::2 w boxes              lw LW lc rgb COLORS[2] ,\
   DATA.DES[2].RDES.".txt"           skip 1 u (2.40):2 every 1::2::2 pt 7  lw LW ps 2.5 lc -1 ,\
   DATA.DES[2].RDES.".txt"           skip 1 u (2.40):2 every 1::2::2 pt 7  lw LW ps PS  lc rgb COLORS[2] ,\
   MDYN.DES[2].RDES.".txt" 	    skip 1 u (2.40):2 every 1::2::2 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[2].RDES.".txt" 	    skip 1 u (2.40):2 every 1::2::2 pt PT lw LW ps PS  lc rgb COLORS[2] ,\
-  CSMO.DES[3].RDES."-".PARAM.".txt" skip 1 u (2.60):2 every 1::2::2 w boxes              lw LW lc rgb COLORS[3] ,\
+  CSMO.DES[3].RDES."-".PARAM.".out" skip 1 u (2.60):2 every 1::2::2 w boxes              lw LW lc rgb COLORS[3] ,\
   MDYN.DES[3].RDES.".txt" 	    skip 1 u (2.60):2 every 1::2::2 pt PT lw LW ps 2.5 lc -1 ,\
   MDYN.DES[3].RDES.".txt" 	    skip 1 u (2.60):2 every 1::2::2 pt PT lw LW ps PS  lc rgb COLORS[3] ,\
 
