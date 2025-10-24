@@ -41,9 +41,9 @@ do for [i=1:3] {
   set label 1 "b)" at graph 0.10, 0.85
   set term epslatex size 8cm,6cm fontscale 0.75
   set output "figures/isotherms-".HFC[i]."-".PARAM.".tex"
-  p CSMO.HFC[i]."+".DES[1].RDES."-".PARAM.".txt" skip 1 u 1:3 w lp lc rgb COLORS[1] pt -1 lw LW ,\
-    CSMO.HFC[i]."+".DES[2].RDES."-".PARAM.".txt" skip 1 u 1:3 w lp lc rgb COLORS[2] pt -1 lw LW ,\
-    CSMO.HFC[i]."+".DES[3].RDES."-".PARAM.".txt" skip 1 u 1:3 w lp lc rgb COLORS[3] pt -1 lw LW ,\
+  p CSMO.HFC[i]."+".DES[1].RDES."-".PARAM.".out" skip 1 u 1:3 w lp lc rgb COLORS[1] pt -1 lw LW ,\
+    CSMO.HFC[i]."+".DES[2].RDES."-".PARAM.".out" skip 1 u 1:3 w lp lc rgb COLORS[2] pt -1 lw LW ,\
+    CSMO.HFC[i]."+".DES[3].RDES."-".PARAM.".out" skip 1 u 1:3 w lp lc rgb COLORS[3] pt -1 lw LW ,\
     DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
     DATA.HFC[i]."+".DES[2].RDES.".txt" skip 2 u 1:2 lc -1 ps 2.5 pt 7 lw LW ,\
     DATA.HFC[i]."+".DES[1].RDES.".txt" skip 2 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\

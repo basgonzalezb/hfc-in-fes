@@ -36,9 +36,9 @@ set label 1 "a)" at graph 0.10, 0.85
 set term epslatex size 8cm,6cm fontscale 0.75
 set output "figures/sigma_profiles-fdes.tex"
 plot \
-  for [i=1:3] CSMO."sprof_fdes-".PARAM.".txt" skip 1 u ($1*100):2*i   w lp lc rgb COLORS[i] pt -1 lw LW dt 1 ,\
-  for [i=1:3] CSMO."sprof_fdes-".PARAM.".txt" skip 1 u ($1*100):2*i+1 w lp lc rgb COLORS[i] pt -1 lw LW dt 3 ,\
-  CSMO."sprof_fdes-".PARAM.".txt" skip 1 u ($1*100):8     w lp lc -1 pt -1 lw LW
+  for [i=1:3] CSMO."sprof_fes-".PARAM.".out" skip 1 u ($1*100):2*i   w lp lc rgb COLORS[i] pt -1 lw LW dt 1 ,\
+  for [i=1:3] CSMO."sprof_fes-".PARAM.".out" skip 1 u ($1*100):2*i+1 w lp lc rgb COLORS[i] pt -1 lw LW dt 3 ,\
+  CSMO."sprof_fes-".PARAM.".out" skip 1 u ($1*100):8     w lp lc -1 pt -1 lw LW
 unset term
 unset output
 replot
@@ -53,7 +53,7 @@ set label 1 "a)" at graph 0.10, 0.85
 set term epslatex size 8cm,6cm fontscale 0.75
 set output "figures/sigma_profiles-fdes.tex"
 plot \
-  for [i=1:3] CSMO."sprof_fdes-".PARAM.".txt" skip 1 u ($1*100):8+i w lp lc rgb COLORS[i] pt -1 lw LW
+  for [i=1:3] CSMO."sprof_fes-".PARAM.".out" skip 1 u ($1*100):8+i w lp lc rgb COLORS[i] pt -1 lw LW
 unset term
 unset output
 replot
@@ -67,7 +67,7 @@ set term epslatex size 8cm,6cm fontscale 0.75
 set output "figures/sigma_potentials-fdes.tex"
 plot \
   0*x w lp pt -1 lw LW dt 1 lc rgb GRAY ,\
-  for [i=1:3] CSMO."spot_fdes-".PARAM.".txt"  skip 1 u ($1*100):i+1 w lp lc rgb COLORS[i] pt -1 lw LW
+  for [i=1:3] CSMO."spot_fes-".PARAM.".out"  skip 1 u ($1*100):i+1 w lp lc rgb COLORS[i] pt -1 lw LW
 unset term
 unset output
 replot
