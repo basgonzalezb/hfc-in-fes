@@ -10,8 +10,8 @@ PS		= 2
 XLABEL		= "$T$ / K"
 YLABEL		= "$\\hat{\\rho}^L$ / g$\\cdot$cm$^{-3}$"
 
-MDYN1		= "../../md_analysis/density/pfpa_unscaled.txt"
-MDYN2		= "../../md_analysis/density/pfpa_scaled.txt"
+MDYN1		= "../../md_analysis/density/pfpa_unscaled.out"
+MDYN2		= "../../md_analysis/density/pfpa_scaled.out"
 DATA		= "../../experimental/density/pfpa.txt"
 
 array COLORS[3]	= ["#780116", "#B85B27", "#F7B538"]

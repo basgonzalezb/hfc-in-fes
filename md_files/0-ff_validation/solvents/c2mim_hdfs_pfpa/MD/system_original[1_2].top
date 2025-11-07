@@ -1,0 +1,26 @@
+;; F-Gases Proyect 
+;; Date:2024-12-23 09:54:44.426858
+
+ [ defaults ] 
+;nbfunc comb-rule gen-pairs fudgeLJ fudgeQQ 
+ 1           3        yes        0.5     0.5 
+
+; Include atomtypes 
+#include "PWD/ff/C2M_atoms.itp"
+#include "PWD/FIT/ROUTE/HDFS_atoms.itp"
+#include "PWD/ff/PFPA_atoms.itp"
+
+; ; Include molecules 
+#include "PWD/ff/C2M.itp"
+#include "PWD/ff/HDFS.itp"
+#include "PWD/ff/PFPA.itp"
+
+ [ system ] 
+; Name 
+C2M HDFS PFPA (1:2)
+
+[ molecules ] 
+; Compound        #mols 
+C2M            400
+HDFS           400
+PFPA           800

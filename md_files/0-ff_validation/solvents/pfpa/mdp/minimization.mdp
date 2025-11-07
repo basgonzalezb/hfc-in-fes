@@ -1,0 +1,21 @@
+
+integrator              = steep
+emtol                   = 100
+nsteps                  = 100000
+
+
+cutoff-scheme           = Verlet
+nstlist                 = 10
+rlist                   = 1.20
+
+coulombtype             = PME
+rcoulomb                = 1.20
+fourierspacing	        = 0.12
+
+vdwtype                 = Cut-off
+vdw-modifier            = Potential-shift
+rvdw_switch             = 1.00
+rvdw                    = 1.20
+
+constraints             = all-bonds
+constraint_algorithm    = LINCS

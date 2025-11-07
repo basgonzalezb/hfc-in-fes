@@ -1,0 +1,46 @@
+
+integrator		= md
+dt			= 0.001
+nsteps			= 500000
+comm-mode		= Linear
+
+nstxout			= 0     		; [steps] freq to write coordinates to trajectory
+nstvout			= 0     		; [steps] freq to write velocities to trajectory
+nstfout			= 0     		; [steps] freq to write forces to trajectory
+nstlog			= 0     		; [steps] freq to write energies to log file
+nstenergy		= 0     		; group(s) to write to energy file
+nstxout-compressed	= 0     		; freq to write coordinates to xtc trajectory
+
+cutoff-scheme		= Verlet
+nstlist			= 20
+rlist			= 1.20
+
+pbc			= xyz
+
+coulombtype		= PME
+rcoulomb		= 1.20
+fourierspacing		= 0.12
+
+vdwtype			= Cut-off
+vdw-modifier		= Potential-shift
+rvdw_switch		= 1.00
+rvdw			= 1.20
+DispCorr		= EnerPres
+
+tcoupl			= berendsen
+tc-grps			= System
+tau_t			= 1.5
+ref_t			= TEMPERATURE
+
+pcoupl                  = berendsen
+pcoupltype              = isotropic
+tau_p                   = 1.5
+ref_p                   = 1.01
+compressibility         = 4.5e-5
+
+gen_vel			= yes
+gen_temp		= TEMPERATURE
+gen_seed		= -1
+
+constraints		= hbonds
+constraint_algorithm	= LINCS

@@ -42,28 +42,28 @@ set term epslatex size 8cm,6cm fontscale 0.75
 set output "figures/density_main.tex"
 p DATA.DES[1].RDES[1].".txt" skip 1 u (XHBA[1]):($2*MW1[1]/1000)   every 1::1::1 pt 7 ps 2.5 lw LW lc -1 ,\
   DATA.DES[1].RDES[1].".txt" skip 1 u (XHBA[1]):($2*MW1[1]/1000)   every 1::1::1 pt 7 ps PS  lw LW lc rgb COLORS[1] ,\
-  MDYN.DES[1].RDES[1].".txt" skip 1 u (XHBA[1]):($2*MW1[1]/1000):($3*MW1[1]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
-  MDYN.DES[1].RDES[1].".txt" skip 1 u (XHBA[1]):($2*MW1[1]/1000):($3*MW1[1]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[1] ,\
+  MDYN.DES[1].RDES[1].".out" skip 1 u (XHBA[1]):($2*MW1[1]/1000):($3*MW1[1]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
+  MDYN.DES[1].RDES[1].".out" skip 1 u (XHBA[1]):($2*MW1[1]/1000):($3*MW1[1]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[1] ,\
   DATA.DES[2].RDES[1].".txt" skip 1 u (XHBA[1]):($2*MW2[1]/1000)   every 1::1::1 pt 7 ps 2.5 lw LW lc -1 ,\
   DATA.DES[2].RDES[1].".txt" skip 1 u (XHBA[1]):($2*MW2[1]/1000)   every 1::1::1 pt 7 ps PS  lw LW lc rgb COLORS[2] ,\
-  MDYN.DES[2].RDES[1].".txt" skip 1 u (XHBA[1]):($2*MW2[1]/1000):($3*MW2[1]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
-  MDYN.DES[2].RDES[1].".txt" skip 1 u (XHBA[1]):($2*MW2[1]/1000):($3*MW2[1]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[2] ,\
+  MDYN.DES[2].RDES[1].".out" skip 1 u (XHBA[1]):($2*MW2[1]/1000):($3*MW2[1]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
+  MDYN.DES[2].RDES[1].".out" skip 1 u (XHBA[1]):($2*MW2[1]/1000):($3*MW2[1]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[2] ,\
   DATA.DES[1].RDES[2].".txt" skip 1 u (XHBA[2]):($2*MW1[2]/1000)   every 1::1::1 pt 7 ps 2.5 lw LW lc -1 ,\
   DATA.DES[1].RDES[2].".txt" skip 1 u (XHBA[2]):($2*MW1[2]/1000)   every 1::1::1 pt 7 ps PS  lw LW lc rgb COLORS[1] ,\
-  MDYN.DES[1].RDES[2].".txt" skip 1 u (XHBA[2]):($2*MW1[2]/1000):($3*MW1[2]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
-  MDYN.DES[1].RDES[2].".txt" skip 1 u (XHBA[2]):($2*MW1[2]/1000):($3*MW1[2]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[1] ,\
+  MDYN.DES[1].RDES[2].".out" skip 1 u (XHBA[2]):($2*MW1[2]/1000):($3*MW1[2]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
+  MDYN.DES[1].RDES[2].".out" skip 1 u (XHBA[2]):($2*MW1[2]/1000):($3*MW1[2]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[1] ,\
   DATA.DES[2].RDES[2].".txt" skip 1 u (XHBA[2]):($2*MW2[2]/1000)   every 1::1::1 pt 7 ps 2.5 lw LW lc -1 ,\
   DATA.DES[2].RDES[2].".txt" skip 1 u (XHBA[2]):($2*MW2[2]/1000)   every 1::1::1 pt 7 ps PS  lw LW lc rgb COLORS[2] ,\
-  MDYN.DES[2].RDES[2].".txt" skip 1 u (XHBA[2]):($2*MW2[2]/1000):($3*MW2[2]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
-  MDYN.DES[2].RDES[2].".txt" skip 1 u (XHBA[2]):($2*MW2[2]/1000):($3*MW2[2]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[2] ,\
+  MDYN.DES[2].RDES[2].".out" skip 1 u (XHBA[2]):($2*MW2[2]/1000):($3*MW2[2]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
+  MDYN.DES[2].RDES[2].".out" skip 1 u (XHBA[2]):($2*MW2[2]/1000):($3*MW2[2]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[2] ,\
   DATA.DES[1].RDES[3].".txt" skip 1 u (XHBA[3]):($2*MW1[3]/1000)   every 1::1::1 pt 7 ps 2.5 lw LW lc -1 ,\
   DATA.DES[1].RDES[3].".txt" skip 1 u (XHBA[3]):($2*MW1[3]/1000)   every 1::1::1 pt 7 ps PS  lw LW lc rgb COLORS[1] ,\
-  MDYN.DES[1].RDES[3].".txt" skip 1 u (XHBA[3]):($2*MW1[3]/1000):($3*MW1[3]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
-  MDYN.DES[1].RDES[3].".txt" skip 1 u (XHBA[3]):($2*MW1[3]/1000):($3*MW1[3]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[1] ,\
+  MDYN.DES[1].RDES[3].".out" skip 1 u (XHBA[3]):($2*MW1[3]/1000):($3*MW1[3]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
+  MDYN.DES[1].RDES[3].".out" skip 1 u (XHBA[3]):($2*MW1[3]/1000):($3*MW1[3]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[1] ,\
   DATA.DES[2].RDES[3].".txt" skip 1 u (XHBA[3]):($2*MW2[3]/1000)   every 1::1::1 pt 7 ps 2.5 lw LW lc -1 ,\
   DATA.DES[2].RDES[3].".txt" skip 1 u (XHBA[3]):($2*MW2[3]/1000)   every 1::1::1 pt 7 ps PS  lw LW lc rgb COLORS[2] ,\
-  MDYN.DES[2].RDES[3].".txt" skip 1 u (XHBA[3]):($2*MW2[3]/1000):($3*MW2[3]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
-  MDYN.DES[2].RDES[3].".txt" skip 1 u (XHBA[3]):($2*MW2[3]/1000):($3*MW2[3]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[2]
+  MDYN.DES[2].RDES[3].".out" skip 1 u (XHBA[3]):($2*MW2[3]/1000):($3*MW2[3]/1000) every 1::1::1 w errorbars pt PT ps 2.5 lw LW lc -1 ,\
+  MDYN.DES[2].RDES[3].".out" skip 1 u (XHBA[3]):($2*MW2[3]/1000):($3*MW2[3]/1000) every 1::1::1 w errorbars pt PT ps PS  lw LW lc rgb COLORS[2]
 unset term
 unset output
 replot

@@ -1,0 +1,24 @@
+# This file was created Fri Jan 17 20:56:19 2025
+# Created by:
+#                      :-) GROMACS - gmx energy, 2022.1 (-:
+# 
+# Executable:   /opt/ohpc/pub/gromacs/2022.1/gromacs.AVX512.static/bin/gmx_mpi
+# Data prefix:  /opt/ohpc/pub/gromacs/2022.1/gromacs.AVX512.static
+# Working dir:  /home/ngajardo/cluster_hfc/MD/27/2_eqNPT
+# Command line:
+#   gmx_mpi energy -f eq2.edr -s eq2.tpr -b 2000 -o /home/ngajardo/cluster_hfc/fep/27/pressure.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gravel Rubs Often Many Awfully Cauterized Sores
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Pressure"

@@ -1,0 +1,20 @@
+;; F-Gases Proyect 
+;; Date:2024-12-03 00:37:48.247392
+
+ [ defaults ] 
+;nbfunc comb-rule gen-pairs fudgeLJ fudgeQQ 
+ 1           3        yes        0.5     0.5 
+
+; Include atomtypes 
+#include "/home/bach/bastian/fdes/pfpa/md/opls-pfas/refit/FIT/fs_1.02_and_fe_0.89/atomtypes.itp"
+
+; ; Include molecules 
+#include "/home/bach/bastian/fdes/pfpa/md/opls-pfas/refit/ff/PFPA.itp"
+
+ [ system ] 
+; Name 
+PFPA
+
+[ molecules ] 
+; Compound        #mols 
+PFPA           1000

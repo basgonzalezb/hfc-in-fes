@@ -1,0 +1,8 @@
+[ atomtypes ]
+; name  at.nr     mass   charge  ptype    sigma    epsilon
+HBDC_CF     6  12.0110   0.0000      A  0.36400    0.24577
+HBDF        9  18.9984   0.0000      A  0.30680    0.19736
+HBDC_COOH   6  12.0110   0.0000      A  0.39000    0.39099
+HBDO_OH     8  15.9990   0.0000      A  0.31200    0.63304
+HBDO_CO     8  15.9990   0.0000      A  0.30784    0.78199
+HBDH_OH     1   1.0080   0.0000      A  0.00000    0.00000

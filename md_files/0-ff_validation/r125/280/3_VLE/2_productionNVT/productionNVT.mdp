@@ -1,0 +1,49 @@
+; Run parameters
+integrator               = md        ; leap-frog integrator
+dt                       = 0.001
+nsteps                   = 60000000
+comm-mode                = Linear    ; Remove center of mass translation
+
+; Output control
+nstxout                 = 50000     ; [steps] freq to write coordinates to trajectory
+nstvout                 = 50000     ; [steps] freq to write velocities to trajectory  
+nstfout                 = 50000     ; [steps] freq to write forces to trajectory
+nstlog                  = 10000     ; [steps] freq to write energies to log file  
+nstenergy               = 10000     ; group(s) to write to energy file
+nstxout-compressed      = 10000     ; freq to write coordinates to xtc trajectory
+
+; Neighbor searching and vdW
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.2
+vdwtype                 = Cut-off
+vdw-modifier            = Potential-shift
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+coulombtype             = PME
+rcoulomb                = 1.2
+fourierspacing	        = 0.12
+
+; Temperature coupling
+tcoupl                  = Nose-Hoover
+tc-grps                 = System	; two coupling groups - more accurate
+tau_t                   = 1.5		; time constant, in ps
+ref_t                   = 280		; reference temperature, one for each group, in K
+
+; Pressure coupling
+pcoupl                  = no
+
+; Periodic boundary conditions
+pbc                     = xyz       	; 3-D PBC
+
+; use dispersion correction
+DispCorr                = no
+
+; Velocity generation
+gen_vel                 = no           ; assign velocities from Maxwell distribution
+
+
+; OPTIONS FOR BONDS
+constraints             = hbonds
+constraint_algorithm    = LINCS
+

@@ -43,12 +43,12 @@ do for [i=1:2] {
     DATA.DES[i].RDES[1].".txt" skip 1 u 1:2 lc rgb COLORS[1] ps PS pt 7 lw LW ,\
     DATA.DES[i].RDES[2].".txt" skip 1 u 1:2 lc rgb COLORS[2] ps PS pt 7 lw LW ,\
     DATA.DES[i].RDES[3].".txt" skip 1 u 1:2 lc rgb COLORS[3] ps PS pt 7 lw LW ,\
-    MDYN.DES[i].RDES[1].".txt" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
-    MDYN.DES[i].RDES[2].".txt" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
-    MDYN.DES[i].RDES[3].".txt" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
-    MDYN.DES[i].RDES[1].".txt" skip 1 u 1:2 lc rgb COLORS[1] ps PS pt PT lw LW ,\
-    MDYN.DES[i].RDES[2].".txt" skip 1 u 1:2 lc rgb COLORS[2] ps PS pt PT lw LW ,\
-    MDYN.DES[i].RDES[3].".txt" skip 1 u 1:2 lc rgb COLORS[3] ps PS pt PT lw LW
+    MDYN.DES[i].RDES[1].".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
+    MDYN.DES[i].RDES[2].".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
+    MDYN.DES[i].RDES[3].".out" skip 1 u 1:2 lc -1 ps 2.5 pt PT lw LW ,\
+    MDYN.DES[i].RDES[1].".out" skip 1 u 1:2 lc rgb COLORS[1] ps PS pt PT lw LW ,\
+    MDYN.DES[i].RDES[2].".out" skip 1 u 1:2 lc rgb COLORS[2] ps PS pt PT lw LW ,\
+    MDYN.DES[i].RDES[3].".out" skip 1 u 1:2 lc rgb COLORS[3] ps PS pt PT lw LW
   unset term
   unset output
   replot

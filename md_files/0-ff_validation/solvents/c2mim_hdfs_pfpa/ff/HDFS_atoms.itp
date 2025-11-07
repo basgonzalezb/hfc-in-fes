@@ -1,0 +1,12 @@
+; from CL&P force field
+; sigma scaled by 1.00, epsilon scaled by 1.00
+
+[ atomtypes ]
+; name  at.nr     mass   charge  ptype  sigma      epsilon
+CTF         6  12.0110   0.0000      A  0.35000    0.27614
+CSF         6  12.0110   0.0000      A  0.35000    0.27614
+CF3         6  12.0110   0.0000      A  0.35000    0.27614
+SO         16  32.0660   0.0000      A  0.35500    1.04600
+OS3         8  15.9990   0.0000      A  0.31500    0.83736
+F           9  15.9990   0.0000      A  0.29500    0.22200
+FC1         9  18.9980   0.0000      A  0.29500    0.22200

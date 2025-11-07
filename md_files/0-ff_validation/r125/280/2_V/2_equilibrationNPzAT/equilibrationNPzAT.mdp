@@ -1,0 +1,53 @@
+; Run parameters
+integrator               = md        ; leap-frog integrator
+dt                       = 0.001
+nsteps                   = 10000000
+comm-mode                = Linear    ; Remove center of mass translation
+
+; Output control
+nstxout                 = 50000     ; [steps] freq to write coordinates to trajectory
+nstvout                 = 50000     ; [steps] freq to write velocities to trajectory  
+nstfout                 = 50000     ; [steps] freq to write forces to trajectory
+nstlog                  = 50000     ; [steps] freq to write energies to log file  
+nstenergy               = 10000     ; group(s) to write to energy file
+nstxout-compressed      = -1        ; freq to write coordinates to xtc trajectory
+
+; Neighbor searching and vdW
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.2
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+coulombtype             = PME
+rcoulomb                = 1.2
+fourierspacing	        = 3.00
+
+; Temperature coupling
+tcoupl                  = v-rescale	; Berendsen thermostat
+tc-grps                 = System	; two coupling groups - more accurate
+tau_t                   = 1.5		; time constant, in ps
+ref_t                   = 280		; reference temperature, one for each group, in K
+
+; Pressure coupling
+pcoupl                  = berendsen
+pcoupltype		= semiisotropic
+tau-p			= 1.5
+compressibility		= 0.0 4.5E-5
+ref-p			= 8.47 8.47
+
+; Periodic boundary conditions
+pbc                     = xyz       ; 3-D PBC
+
+; use dispersion correction
+DispCorr		= EnerPres
+
+; Velocity generation
+gen_vel                 = yes           ; assign velocities from Maxwell distribution
+gen_temp                = 280		; temperature for Maxwell distribution
+gen_seed                = -1		; generate a random seed
+
+; OPTIONS FOR BONDS
+constraints             = hbonds
+constraint_algorithm    = LINCS

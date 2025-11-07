@@ -1,0 +1,72 @@
+                      :-) GROMACS - gmx energy, 2021.3 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx energy, version 2021.3
+Executable:   /opt/gromacs-2021.3/bin/gmx_mpi
+Data prefix:  /opt/gromacs-2021.3
+Working dir:  /home/bach/bastian/fdes/density_md/MD/1/3_prNPT
+Command line:
+  gmx_mpi energy -f pr.edr -s pr.tpr -b 1000 -o energy.xvg
+
+Opened pr.edr as single precision energy file
+
+Select the terms you want from the following list by
+selecting either (part of) the name or the number or a combination.
+End your selection with an empty line or a zero.
+-------------------------------------------------------------------
+  1  Bond             2  Angle            3  Ryckaert-Bell.   4  Fourier-Dih.  
+  5  LJ-14            6  Coulomb-14       7  LJ-(SR)          8  Disper.-corr. 
+  9  Coulomb-(SR)    10  Coul.-recip.    11  Potential       12  Kinetic-En.   
+ 13  Total-Energy    14  Conserved-En.   15  Temperature     16  Pres.-DC      
+ 17  Pressure        18  Constr.-rmsd    19  Box-X           20  Box-Y         
+ 21  Box-Z           22  Volume          23  Density         24  pV            
+ 25  Enthalpy        26  Vir-XX          27  Vir-XY          28  Vir-XZ        
+ 29  Vir-YX          30  Vir-YY          31  Vir-YZ          32  Vir-ZX        
+ 33  Vir-ZY          34  Vir-ZZ          35  Pres-XX         36  Pres-XY       
+ 37  Pres-XZ         38  Pres-YX         39  Pres-YY         40  Pres-YZ       
+ 41  Pres-ZX         42  Pres-ZY         43  Pres-ZZ         44  #Surf*SurfTen 
+ 45  Box-Vel-XX      46  Box-Vel-YY      47  Box-Vel-ZZ      48  T-System      
+
+Reading energy frame      0 time    0.000         Reading energy frame      1 time    5.000         Reading energy frame      2 time   10.000         Reading energy frame      3 time   15.000         Reading energy frame      4 time   20.000         Reading energy frame      5 time   25.000         Reading energy frame      6 time   30.000         Reading energy frame      7 time   35.000         Reading energy frame      8 time   40.000         Reading energy frame      9 time   45.000         Reading energy frame     10 time   50.000         Reading energy frame     11 time   55.000         Reading energy frame     12 time   60.000         Reading energy frame     13 time   65.000         Reading energy frame     14 time   70.000         Reading energy frame     15 time   75.000         Reading energy frame     16 time   80.000         Reading energy frame     17 time   85.000         Reading energy frame     18 time   90.000         Reading energy frame     19 time   95.000         Reading energy frame     20 time  100.000         Reading energy frame     30 time  150.000         Reading energy frame     40 time  200.000         Reading energy frame     50 time  250.000         Reading energy frame     60 time  300.000         Reading energy frame     70 time  350.000         Reading energy frame     80 time  400.000         Reading energy frame     90 time  450.000         Reading energy frame    100 time  500.000         Reading energy frame    110 time  550.000         Reading energy frame    120 time  600.000         Reading energy frame    130 time  650.000         Reading energy frame    140 time  700.000         Reading energy frame    150 time  750.000         Reading energy frame    160 time  800.000         Reading energy frame    170 time  850.000         Reading energy frame    180 time  900.000         Reading energy frame    190 time  950.000         Reading energy frame    200 time 1000.000         Reading energy frame    300 time 1500.000         Reading energy frame    400 time 2000.000         Reading energy frame    500 time 2500.000         Reading energy frame    600 time 3000.000         Reading energy frame    700 time 3500.000         Reading energy frame    800 time 4000.000         Reading energy frame    900 time 4500.000         Reading energy frame   1000 time 5000.000         Last energy frame read 1000 time 5000.000         
+
+GROMACS reminds you: "You Fill Your Space So Sweet" (F. Apple)
+
+
+Statistics over 4000001 steps [ 1000.0000 through 5000.0000 ps ], 4 data sets
+All statistics are over 40001 points
+
+Energy                      Average   Err.Est.       RMSD  Tot-Drift
+-------------------------------------------------------------------------------
+Total Energy                29999.9        300    1079.06   -2074.16  (kJ/mol)
+Pressure                   0.643305       0.77    327.599    1.35224  (bar)
+Density                     1641.56        1.3    4.61318    9.05179  (kg/m^3)
+T-System                    293.154     0.0028    2.04253  0.0112307  (K)
