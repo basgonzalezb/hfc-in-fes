@@ -1,0 +1,38 @@
+
+integrator		= md
+dt			= 0.001
+nsteps			= 20000000
+comm-mode              	= Linear		; remove center of mass translation
+
+nstenergy               = 10000			; freq to write energies to edr file
+nstxout			= 10000			; freq to write coordinates to trr trajectory
+nstvout			= 10000			; freq to write velocities  to trr trajectory
+
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.20
+
+pbc                     = xyz
+
+coulombtype             = PME
+rcoulomb                = 1.20
+fourierspacing          = 0.12
+
+vdwtype                 = Cut-off
+vdw-modifier		= Potential-shift
+rvdw_switch		= 1.00
+rvdw                    = 1.20
+DispCorr		= EnerPres
+
+tcoupl			= Nose-Hoover
+tc-grps			= System
+tau_t			= 1.5
+ref_t			= 303.15
+
+pcoupl                  = no
+
+constraint_algorithm    = LINCS
+constraints             = hbonds
+lincs-iter		= 2			; for energy conservation in NVE
+
+cos-acceleration	= AMPVAL

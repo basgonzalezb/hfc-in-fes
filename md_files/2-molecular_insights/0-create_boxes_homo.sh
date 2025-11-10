@@ -7,7 +7,7 @@ HOME=`pwd`
 GMX=gmx_mpi
 
 mkdir -p $HOME/MD
-for system in {3..27..3}
+for system in {4..36..4}
 do
 	rm -r -f $HOME/MD/${system}
 	mkdir -p $HOME/MD/${system}

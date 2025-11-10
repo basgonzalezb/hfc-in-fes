@@ -1,0 +1,114 @@
+                      :-) GROMACS - gmx mdrun, 2021.3 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.3
+Executable:   /opt/gromacs-2021.3/bin/gmx_mpi
+Data prefix:  /opt/gromacs-2021.3
+Working dir:  /home/bach/bastian/2_fdes_transport/2_nemd_3/MD_NEMD/30/run_7/1_min
+Command line:
+  gmx_mpi mdrun -deffnm min
+
+Reading file min.tpr, VERSION 2021.3 (single precision)
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 1 MPI process
+Using 8 OpenMP threads 
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =        50000
+
+Step 37, time 0.037 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000225, max 0.019595 (between atoms 14330 and 14331)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+
+Step 38, time 0.038 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000838, max 0.068711 (between atoms 14332 and 14333)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+  14330  14331   41.8    0.1253   0.1246      0.1229
+  14332  14333   30.6    0.0928   0.1010      0.0945
+
+Step 39, time 0.039 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000606, max 0.052596 (between atoms 14332 and 14333)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+  14330  14331   37.4    0.1246   0.1288      0.1229
+  14332  14333   43.7    0.1010   0.0895      0.0945
+
+Step 40, time 0.04 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.002121, max 0.197453 (between atoms 14330 and 14331)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+  14320  14330   43.8    0.1565   0.1665      0.1529
+  14330  14331   52.1    0.1288   0.1472      0.1229
+  14330  14332   54.5    0.1315   0.1601      0.1364
+  14332  14333   48.0    0.0895   0.1117      0.0945
+
+Step 42, time 0.042 (ps)  LINCS WARNING
+relative constraint deviation after LINCS:
+rms 0.000368, max 0.035708 (between atoms 14320 and 14328)
+bonds that rotated more than 30 degrees:
+ atom 1 atom 2  angle  previous, current, constraint length
+  14330  14331   33.0    0.1261   0.1209      0.1229
+
+Energy minimization has stopped, but the forces have not converged to the
+requested precision Fmax < 10 (which may not be possible for your system). It
+stopped because the algorithm tried to make a new step whose size was too
+small, or there was no change in the energy since last step. Either way, we
+regard the minimization as converged to within the available machine
+precision, given your starting configuration and EM parameters.
+
+Double precision normally gives you higher accuracy, but this is often not
+needed for preparing to run molecular dynamics.
+You might need to increase your constraint accuracy, or turn
+off constraints altogether (set constraints = none in mdp file)
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to machine precision in 86 steps,
+but did not reach the requested Fmax < 10.
+Potential Energy  = -6.8770156e+04
+Maximum force     =  4.0791169e+03 on atom 14332
+Norm of force     =  6.8015250e+01
+
+GROMACS reminds you: "Once Again Let Me Do This" (Urban Dance Squad)
+

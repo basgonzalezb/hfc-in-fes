@@ -1,0 +1,971 @@
+Command line:
+"travis -p ../../../3_prNPT/trajectory.gro -i input.txt"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on newton02 at Thu May  8 12:02:27 2025 (PID 540000)
+ #  Running in /home/bach/bastian/1_solvation_insights/MD/24/4_results/add/re5_nfs
+ #  Version: Jul 29 2022, built at Apr 15 2023, 11:23:55, compiler "8.5.0 20210514 (Red Hat 8.5.0-13)", GCC 8.5.0
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/bach,  Executable: /home/bach/travis/exe/travis
+ #  Input from input.txt, Output is redirected
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/bach/.travis.conf ...
+
+    Opening position trajectory ../../../3_prNPT/trajectory.gro ...
+
+    Trajectory contains approximately 3601 frames (just a *guess* from the file size of 4.67 GiB).
+
+    Digits or special characters in element labels not allowed.
+    Removing those characters from all atom labels.
+
+    30912 atoms in the system: 8728x C, 9820x F, 10114x H, 250x N, 1750x O, 250x S
+
+    System extent:  X = {     +0 ..  +7349 pm }, dX = 7349 pm
+      (in step 1)   Y = {     +0 ..  +7349 pm }, dY = 7349 pm
+                    Z = {     +0 ..  +7349 pm }, dZ = 7349 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] <RETURN>
+
+    Found cell geometry data in trajectory file:
+
+      X = 7349.51 pm,   Y = 7349.51 pm,   Z = 7349.51 pm
+
+    The overall box density is 1.426797 g/cm^3.
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] <RETURN>
+    Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] <RETURN>
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      N       |           7 |  14.00690 |            77.00 |          155.00 | #0000FF
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+      F       |           9 |  18.99840 |            73.00 |          147.00 | #00FF00
+      S       |          16 |  32.06750 |           106.00 |          180.00 | #FFFF00
+
+
+    NPT: Using a cell vector of ( 7349.51 pm | 7349.51 pm | 7349.51 pm ) for molecule recognition.
+
+    Initialized spatial domain engine with 30 x 30 x 30 cells, min. diameter = 244 pm.
+
+    Molecule recognition [###########################################################]
+
+    1614 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 4 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 0 rings.
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C4F9O3S; Representant 1; Distances in pm ***
+
+    C1  C2  C3  C4  F1  F2  F3  F4  F5  F6  F7  F8  F9  O1  O2  O3  S1 
+C1  *** 156  -   -  136 132  -   -   -   -   -   -   -   -   -   -  184 
+C2  156 *** 151  -   -   -  131 144  -   -   -   -   -   -   -   -   -  
+C3   -  151 *** 153  -   -   -   -  132 136  -   -   -   -   -   -   -  
+C4   -   -  153 ***  -   -   -   -   -   -  130 138 132  -   -   -   -  
+F1  136  -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -  
+F2  132  -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -  
+F3   -  131  -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+F4   -  144  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+F5   -   -  132  -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+F6   -   -  136  -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+F7   -   -   -  130  -   -   -   -   -   -  ***  -   -   -   -   -   -  
+F8   -   -   -  138  -   -   -   -   -   -   -  ***  -   -   -   -   -  
+F9   -   -   -  132  -   -   -   -   -   -   -   -  ***  -   -   -   -  
+O1   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -  146 
+O2   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -  145 
+O3   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  *** 142 
+S1  184  -   -   -   -   -   -   -   -   -   -   -   -  146 145 142 *** 
+
+    Atoms F1, F2 are equivalent.
+    Atoms F3, F4 are equivalent.
+    Atoms F5, F6 are equivalent.
+    Atoms F7, F8, F9 are equivalent.
+    Atoms O1, O2, O3 are equivalent.
+
+*** Molecule 2: C5F9HO2; Representant 1; Distances in pm ***
+
+    C1  C2  C3  C4  C5  F1  F2  F3  F4  F5  F6  F7  F8  F9  H1  O1  O2 
+C1  *** 155  -  157  -  131 136  -   -   -   -   -   -   -   -   -   -  
+C2  155 *** 159  -   -   -   -  136 131  -   -   -   -   -   -   -   -  
+C3   -  159 ***  -  154  -   -   -   -   -   -   -  132 132  -   -   -  
+C4  157  -   -  ***  -   -   -   -   -  138 136 134  -   -   -   -   -  
+C5   -   -  154  -  ***  -   -   -   -   -   -   -   -   -   -  137 122 
+F1  131  -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -  
+F2  136  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+F3   -  136  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+F4   -  131  -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+F5   -   -   -  138  -   -   -   -   -  ***  -   -   -   -   -   -   -  
+F6   -   -   -  136  -   -   -   -   -   -  ***  -   -   -   -   -   -  
+F7   -   -   -  134  -   -   -   -   -   -   -  ***  -   -   -   -   -  
+F8   -   -  132  -   -   -   -   -   -   -   -   -  ***  -   -   -   -  
+F9   -   -  132  -   -   -   -   -   -   -   -   -   -  ***  -   -   -  
+H1   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  94  -  
+O1   -   -   -   -  137  -   -   -   -   -   -   -   -   -   94 ***  -  
+O2   -   -   -   -  122  -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    Atoms F1, F2 are equivalent.
+    Atoms F3, F4 are equivalent.
+    Atoms F5, F6, F7 are equivalent.
+    Atoms F8, F9 are equivalent.
+
+*** Molecule 3: C16H36N; Representant 1; Distances in pm ***
+
+    C1  C2  C3  C4  C5  C6  C7  C8  C9  C10 C11 C12 C13 C14 C15 C16 H1  H2  H3  H4  H5  H6  H7  H8  H9  H10 H11 H12 H13 H14 H15 H16 H17 H18 H19 H20 H21 H22 H23 H24 H25 H26 H27 H28 H29 H30 H31 H32 H33 H34 H35 H36 N1 
+C1  ***  -   -   -  151  -   -   -   -   -   -   -   -   -   -   -  109 109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  152 
+C2   -  ***  -   -   -  154  -   -   -   -   -   -   -   -   -   -   -   -  109 109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  148 
+C3   -   -  ***  -   -   -  153  -   -   -   -   -   -   -   -   -   -   -   -   -  109 109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  151 
+C4   -   -   -  ***  -   -   -  152  -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  152 
+C5  151  -   -   -  ***  -   -   -  154  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+C6   -  154  -   -   -  ***  -   -   -  156  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+C7   -   -  153  -   -   -  ***  -   -   -  154  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 110  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+C8   -   -   -  152  -   -   -  ***  -   -   -  162  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 110  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+C9   -   -   -   -  154  -   -   -  ***  -   -   -  156  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+C10  -   -   -   -   -  156  -   -   -  ***  -   -   -  155  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 108  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+C11  -   -   -   -   -   -  154  -   -   -  ***  -   -   -  148  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+C12  -   -   -   -   -   -   -  162  -   -   -  ***  -   -   -  150  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  108 109  -   -   -   -   -   -   -   -   -   -   -   -   -  
+C13  -   -   -   -   -   -   -   -  156  -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  110 109 109  -   -   -   -   -   -   -   -   -   -  
+C14  -   -   -   -   -   -   -   -   -  155  -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 109 109  -   -   -   -   -   -   -  
+C15  -   -   -   -   -   -   -   -   -   -  148  -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 109 109  -   -   -   -  
+C16  -   -   -   -   -   -   -   -   -   -   -  150  -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109 109 110  -  
+H1  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H2  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H3   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H4   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H5   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H6   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H7   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H8   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H9   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H10  -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H11  -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H12  -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H13  -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H14  -   -   -   -   -   -  110  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H15  -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H16  -   -   -   -   -   -   -  110  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H17  -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H18  -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H19  -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H20  -   -   -   -   -   -   -   -   -  108  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H21  -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H22  -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H23  -   -   -   -   -   -   -   -   -   -   -  108  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -   -  
+H24  -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -   -  
+H25  -   -   -   -   -   -   -   -   -   -   -   -  110  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -  
+H26  -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -  
+H27  -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+H28  -   -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H29  -   -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+H30  -   -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H31  -   -   -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -   -  
+H32  -   -   -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -   -  
+H33  -   -   -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -   -  
+H34  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -   -  
+H35  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -   -  
+H36  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  110  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  ***  -  
+N1  152 148 151 152  -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    This was a very large molecule.
+    Printing the matrix again without H atoms.
+
+    C1  C2  C3  C4  C5  C6  C7  C8  C9  C10 C11 C12 C13 C14 C15 C16 N1 
+C1  ***  -   -   -  151  -   -   -   -   -   -   -   -   -   -   -  152 
+C2   -  ***  -   -   -  154  -   -   -   -   -   -   -   -   -   -  148 
+C3   -   -  ***  -   -   -  153  -   -   -   -   -   -   -   -   -  151 
+C4   -   -   -  ***  -   -   -  152  -   -   -   -   -   -   -   -  152 
+C5  151  -   -   -  ***  -   -   -  154  -   -   -   -   -   -   -   -  
+C6   -  154  -   -   -  ***  -   -   -  156  -   -   -   -   -   -   -  
+C7   -   -  153  -   -   -  ***  -   -   -  154  -   -   -   -   -   -  
+C8   -   -   -  152  -   -   -  ***  -   -   -  162  -   -   -   -   -  
+C9   -   -   -   -  154  -   -   -  ***  -   -   -  156  -   -   -   -  
+C10  -   -   -   -   -  156  -   -   -  ***  -   -   -  155  -   -   -  
+C11  -   -   -   -   -   -  154  -   -   -  ***  -   -   -  148  -   -  
+C12  -   -   -   -   -   -   -  162  -   -   -  ***  -   -   -  150  -  
+C13  -   -   -   -   -   -   -   -  156  -   -   -  ***  -   -   -   -  
+C14  -   -   -   -   -   -   -   -   -  155  -   -   -  ***  -   -   -  
+C15  -   -   -   -   -   -   -   -   -   -  148  -   -   -  ***  -   -  
+C16  -   -   -   -   -   -   -   -   -   -   -  150  -   -   -  ***  -  
+N1  152 148 151 152  -   -   -   -   -   -   -   -   -   -   -   -  *** 
+
+    Atoms C1, C2, C3, C4 are equivalent.
+    Atoms C5, C6, C7, C8 are equivalent.
+    Atoms C9, C10, C11, C12 are equivalent.
+    Atoms C13, C14, C15, C16 are equivalent.
+    Atoms H1, H2, H3, H4, H5, H6, H7, H8 are equivalent.
+    Atoms H9, H10, H11, H12, H13, H14, H15, H16 are equivalent.
+    Atoms H17, H18, H19, H20, H21, H22, H23, H24 are equivalent.
+    Atoms H25, H26, H27, H28, H29, H30, H31, H32, H33, H34, H35, H36 are equivalent.
+
+*** Molecule 4: C2F5H; Representant 1; Distances in pm ***
+
+    C1  C2  F1  F2  F3  F4  F5  H1 
+C1  *** 153 135 134 136  -   -   -  
+C2  153 ***  -   -   -  134 136 109 
+F1  135  -  ***  -   -   -   -   -  
+F2  134  -   -  ***  -   -   -   -  
+F3  136  -   -   -  ***  -   -   -  
+F4   -  134  -   -   -  ***  -   -  
+F5   -  136  -   -   -   -  ***  -  
+H1   -  109  -   -   -   -   -  *** 
+
+    Atoms F1, F2, F3 are equivalent.
+    Atoms F4, F5 are equivalent.
+
+
+*** The following 4 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C4F9O3S (250 pieces, 299.09 g/mol)
+      (10 noneq. atoms, 9 noneq. bonds, 16 noneq. angles)
+      Concentration:   1.045716 mol/liter
+
+  - Molecule 2:  C5F9HO2 (500 pieces, 264.05 g/mol)
+      (12 noneq. atoms, 11 noneq. bonds, 18 noneq. angles)
+      Concentration:   2.091433 mol/liter
+
+  - Molecule 3:  C16H36N (250 pieces, 242.46 g/mol)
+      (9 noneq. atoms, 8 noneq. bonds, 15 noneq. angles)
+      Concentration:   1.045716 mol/liter
+
+  - Molecule 4:  C2F5H (614 pieces, 120.02 g/mol)
+      (5 noneq. atoms, 4 noneq. bonds, 6 noneq. angles)
+      Concentration:   2.568280 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] <RETURN>
+
+    Accept these molecules (y) or change something (n)? [yes] <RETURN>
+
+    Uniting molecules which have been broken by wrapping...
+      - Molecule C4F9O3S[1] united, 1 bonds unwrapped.
+      - Molecule C4F9O3S[2] united, 13 bonds unwrapped.
+      - Molecule C4F9O3S[12] united, 11 bonds unwrapped.
+      - Molecule C4F9O3S[22] united, 2 bonds unwrapped.
+      - Molecule C4F9O3S[28] united, 7 bonds unwrapped.
+      - Molecule C4F9O3S[36] united, 8 bonds unwrapped.
+      - Molecule C4F9O3S[46] united, 6 bonds unwrapped.
+      - Molecule C4F9O3S[49] united, 1 bonds unwrapped.
+      - Molecule C4F9O3S[54] united, 9 bonds unwrapped.
+      - Molecule C4F9O3S[56] united, 4 bonds unwrapped.
+      - Molecule C4F9O3S[59] united, 6 bonds unwrapped.
+      - Molecule C4F9O3S[67] united, 1 bonds unwrapped.
+      - Molecule C4F9O3S[69] united, 6 bonds unwrapped.
+      - Molecule C4F9O3S[75] united, 10 bonds unwrapped.
+      - Molecule C4F9O3S[78] united, 9 bonds unwrapped.
+      - Molecule C4F9O3S[82] united, 13 bonds unwrapped.
+      - Molecule C4F9O3S[86] united, 7 bonds unwrapped.
+      - Molecule C4F9O3S[89] united, 11 bonds unwrapped.
+      - Molecule C4F9O3S[95] united, 6 bonds unwrapped.
+      - Molecule C4F9O3S[101] united, 3 bonds unwrapped.
+      - Molecule C4F9O3S[103] united, 7 bonds unwrapped.
+      - Molecule C4F9O3S[106] united, 10 bonds unwrapped.
+      - Molecule C4F9O3S[107] united, 4 bonds unwrapped.
+      - Molecule C4F9O3S[121] united, 2 bonds unwrapped.
+      - Molecule C4F9O3S[125] united, 7 bonds unwrapped.
+      - Molecule C4F9O3S[140] united, 4 bonds unwrapped.
+      - Molecule C4F9O3S[144] united, 3 bonds unwrapped.
+      - Molecule C4F9O3S[159] united, 5 bonds unwrapped.
+      - Molecule C4F9O3S[160] united, 2 bonds unwrapped.
+      - Molecule C4F9O3S[166] united, 13 bonds unwrapped.
+      - Molecule C4F9O3S[167] united, 1 bonds unwrapped.
+      - Molecule C4F9O3S[174] united, 8 bonds unwrapped.
+      - Molecule C4F9O3S[177] united, 13 bonds unwrapped.
+      - Molecule C4F9O3S[178] united, 11 bonds unwrapped.
+      - Molecule C4F9O3S[186] united, 6 bonds unwrapped.
+      - Molecule C4F9O3S[196] united, 13 bonds unwrapped.
+      - Molecule C4F9O3S[205] united, 9 bonds unwrapped.
+      - Molecule C4F9O3S[206] united, 4 bonds unwrapped.
+      - Molecule C4F9O3S[209] united, 1 bonds unwrapped.
+      - Molecule C4F9O3S[219] united, 8 bonds unwrapped.
+      - Molecule C4F9O3S[226] united, 2 bonds unwrapped.
+      - Molecule C4F9O3S[234] united, 13 bonds unwrapped.
+      - Molecule C4F9O3S[236] united, 2 bonds unwrapped.
+      - Molecule C4F9O3S[238] united, 13 bonds unwrapped.
+      - Molecule C4F9O3S[239] united, 7 bonds unwrapped.
+      - Molecule C4F9O3S[242] united, 11 bonds unwrapped.
+      - Molecule C4F9O3S[249] united, 10 bonds unwrapped.
+      - Molecule C5F9HO2[3] united, 7 bonds unwrapped.
+      - Molecule C5F9HO2[7] united, 5 bonds unwrapped.
+      - Molecule C5F9HO2[14] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[17] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[22] united, 10 bonds unwrapped.
+      - Molecule C5F9HO2[28] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[32] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[41] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[43] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[48] united, 6 bonds unwrapped.
+      - Molecule C5F9HO2[65] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[73] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[78] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[79] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[87] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[91] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[93] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[99] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[100] united, 7 bonds unwrapped.
+      - Molecule C5F9HO2[113] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[115] united, 6 bonds unwrapped.
+      - Molecule C5F9HO2[120] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[121] united, 13 bonds unwrapped.
+      - Molecule C5F9HO2[127] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[131] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[138] united, 5 bonds unwrapped.
+      - Molecule C5F9HO2[142] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[146] united, 5 bonds unwrapped.
+      - Molecule C5F9HO2[148] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[149] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[169] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[172] united, 9 bonds unwrapped.
+      - Molecule C5F9HO2[185] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[186] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[189] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[192] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[196] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[198] united, 5 bonds unwrapped.
+      - Molecule C5F9HO2[205] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[209] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[218] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[221] united, 10 bonds unwrapped.
+      - Molecule C5F9HO2[224] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[228] united, 5 bonds unwrapped.
+      - Molecule C5F9HO2[229] united, 10 bonds unwrapped.
+      - Molecule C5F9HO2[237] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[238] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[240] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[245] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[247] united, 7 bonds unwrapped.
+      - Molecule C5F9HO2[254] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[262] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[263] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[266] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[267] united, 11 bonds unwrapped.
+      - Molecule C5F9HO2[274] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[275] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[278] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[285] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[293] united, 5 bonds unwrapped.
+      - Molecule C5F9HO2[296] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[299] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[301] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[302] united, 7 bonds unwrapped.
+      - Molecule C5F9HO2[312] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[326] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[327] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[338] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[339] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[343] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[346] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[353] united, 5 bonds unwrapped.
+      - Molecule C5F9HO2[354] united, 7 bonds unwrapped.
+      - Molecule C5F9HO2[355] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[376] united, 6 bonds unwrapped.
+      - Molecule C5F9HO2[379] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[381] united, 9 bonds unwrapped.
+      - Molecule C5F9HO2[382] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[389] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[391] united, 10 bonds unwrapped.
+      - Molecule C5F9HO2[405] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[409] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[422] united, 10 bonds unwrapped.
+      - Molecule C5F9HO2[428] united, 6 bonds unwrapped.
+      - Molecule C5F9HO2[431] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[434] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[438] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[439] united, 1 bonds unwrapped.
+      - Molecule C5F9HO2[461] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[465] united, 8 bonds unwrapped.
+      - Molecule C5F9HO2[467] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[473] united, 10 bonds unwrapped.
+      - Molecule C5F9HO2[475] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[479] united, 4 bonds unwrapped.
+      - Molecule C5F9HO2[481] united, 3 bonds unwrapped.
+      - Molecule C5F9HO2[483] united, 2 bonds unwrapped.
+      - Molecule C5F9HO2[484] united, 2 bonds unwrapped.
+      - Molecule C16H36N[1] united, 16 bonds unwrapped.
+      - Molecule C16H36N[4] united, 7 bonds unwrapped.
+      - Molecule C16H36N[6] united, 7 bonds unwrapped.
+      - Molecule C16H36N[8] united, 7 bonds unwrapped.
+      - Molecule C16H36N[15] united, 19 bonds unwrapped.
+      - Molecule C16H36N[17] united, 23 bonds unwrapped.
+      - Molecule C16H36N[20] united, 10 bonds unwrapped.
+      - Molecule C16H36N[21] united, 4 bonds unwrapped.
+      - Molecule C16H36N[23] united, 25 bonds unwrapped.
+      - Molecule C16H36N[25] united, 25 bonds unwrapped.
+      - Molecule C16H36N[26] united, 11 bonds unwrapped.
+      - Molecule C16H36N[27] united, 9 bonds unwrapped.
+      - Molecule C16H36N[30] united, 27 bonds unwrapped.
+      - Molecule C16H36N[31] united, 22 bonds unwrapped.
+      - Molecule C16H36N[33] united, 4 bonds unwrapped.
+      - Molecule C16H36N[35] united, 23 bonds unwrapped.
+      - Molecule C16H36N[36] united, 22 bonds unwrapped.
+      - Molecule C16H36N[37] united, 16 bonds unwrapped.
+      - Molecule C16H36N[38] united, 7 bonds unwrapped.
+      - Molecule C16H36N[43] united, 14 bonds unwrapped.
+      - Molecule C16H36N[45] united, 2 bonds unwrapped.
+      - Molecule C16H36N[46] united, 1 bonds unwrapped.
+      - Molecule C16H36N[48] united, 28 bonds unwrapped.
+      - Molecule C16H36N[49] united, 22 bonds unwrapped.
+      - Molecule C16H36N[51] united, 20 bonds unwrapped.
+      - Molecule C16H36N[58] united, 7 bonds unwrapped.
+      - Molecule C16H36N[61] united, 3 bonds unwrapped.
+      - Molecule C16H36N[65] united, 13 bonds unwrapped.
+      - Molecule C16H36N[66] united, 11 bonds unwrapped.
+      - Molecule C16H36N[67] united, 13 bonds unwrapped.
+      - Molecule C16H36N[71] united, 22 bonds unwrapped.
+      - Molecule C16H36N[72] united, 7 bonds unwrapped.
+      - Molecule C16H36N[77] united, 19 bonds unwrapped.
+      - Molecule C16H36N[78] united, 17 bonds unwrapped.
+      - Molecule C16H36N[80] united, 6 bonds unwrapped.
+      - Molecule C16H36N[82] united, 1 bonds unwrapped.
+      - Molecule C16H36N[87] united, 12 bonds unwrapped.
+      - Molecule C16H36N[91] united, 25 bonds unwrapped.
+      - Molecule C16H36N[92] united, 23 bonds unwrapped.
+      - Molecule C16H36N[100] united, 20 bonds unwrapped.
+      - Molecule C16H36N[102] united, 27 bonds unwrapped.
+      - Molecule C16H36N[106] united, 22 bonds unwrapped.
+      - Molecule C16H36N[107] united, 4 bonds unwrapped.
+      - Molecule C16H36N[110] united, 11 bonds unwrapped.
+      - Molecule C16H36N[117] united, 14 bonds unwrapped.
+      - Molecule C16H36N[120] united, 15 bonds unwrapped.
+      - Molecule C16H36N[127] united, 2 bonds unwrapped.
+      - Molecule C16H36N[132] united, 15 bonds unwrapped.
+      - Molecule C16H36N[137] united, 13 bonds unwrapped.
+      - Molecule C16H36N[140] united, 21 bonds unwrapped.
+      - Molecule C16H36N[142] united, 19 bonds unwrapped.
+      - Molecule C16H36N[144] united, 15 bonds unwrapped.
+      - Molecule C16H36N[155] united, 25 bonds unwrapped.
+      - Molecule C16H36N[157] united, 1 bonds unwrapped.
+      - Molecule C16H36N[161] united, 18 bonds unwrapped.
+      - Molecule C16H36N[162] united, 14 bonds unwrapped.
+      - Molecule C16H36N[163] united, 22 bonds unwrapped.
+      - Molecule C16H36N[164] united, 22 bonds unwrapped.
+      - Molecule C16H36N[172] united, 2 bonds unwrapped.
+      - Molecule C16H36N[175] united, 8 bonds unwrapped.
+      - Molecule C16H36N[177] united, 7 bonds unwrapped.
+      - Molecule C16H36N[181] united, 1 bonds unwrapped.
+      - Molecule C16H36N[182] united, 20 bonds unwrapped.
+      - Molecule C16H36N[192] united, 15 bonds unwrapped.
+      - Molecule C16H36N[198] united, 4 bonds unwrapped.
+      - Molecule C16H36N[199] united, 17 bonds unwrapped.
+      - Molecule C16H36N[210] united, 2 bonds unwrapped.
+      - Molecule C16H36N[211] united, 6 bonds unwrapped.
+      - Molecule C16H36N[218] united, 6 bonds unwrapped.
+      - Molecule C16H36N[220] united, 11 bonds unwrapped.
+      - Molecule C16H36N[225] united, 18 bonds unwrapped.
+      - Molecule C16H36N[227] united, 14 bonds unwrapped.
+      - Molecule C16H36N[229] united, 1 bonds unwrapped.
+      - Molecule C16H36N[230] united, 8 bonds unwrapped.
+      - Molecule C16H36N[231] united, 23 bonds unwrapped.
+      - Molecule C16H36N[238] united, 23 bonds unwrapped.
+      - Molecule C16H36N[243] united, 17 bonds unwrapped.
+      - Molecule C16H36N[248] united, 7 bonds unwrapped.
+      - Molecule C2F5H[9] united, 3 bonds unwrapped.
+      - Molecule C2F5H[13] united, 1 bonds unwrapped.
+      - Molecule C2F5H[20] united, 3 bonds unwrapped.
+      - Molecule C2F5H[35] united, 3 bonds unwrapped.
+      - Molecule C2F5H[38] united, 2 bonds unwrapped.
+      - Molecule C2F5H[96] united, 1 bonds unwrapped.
+      - Molecule C2F5H[98] united, 2 bonds unwrapped.
+      - Molecule C2F5H[99] united, 1 bonds unwrapped.
+      - Molecule C2F5H[101] united, 2 bonds unwrapped.
+      - Molecule C2F5H[119] united, 2 bonds unwrapped.
+      - Molecule C2F5H[120] united, 1 bonds unwrapped.
+      - Molecule C2F5H[129] united, 4 bonds unwrapped.
+      - Molecule C2F5H[137] united, 1 bonds unwrapped.
+      - Molecule C2F5H[158] united, 1 bonds unwrapped.
+      - Molecule C2F5H[159] united, 1 bonds unwrapped.
+      - Molecule C2F5H[162] united, 4 bonds unwrapped.
+      - Molecule C2F5H[181] united, 4 bonds unwrapped.
+      - Molecule C2F5H[183] united, 1 bonds unwrapped.
+      - Molecule C2F5H[197] united, 2 bonds unwrapped.
+      - Molecule C2F5H[201] united, 4 bonds unwrapped.
+      - Molecule C2F5H[205] united, 2 bonds unwrapped.
+      - Molecule C2F5H[227] united, 1 bonds unwrapped.
+      - Molecule C2F5H[230] united, 3 bonds unwrapped.
+      - Molecule C2F5H[236] united, 3 bonds unwrapped.
+      - Molecule C2F5H[247] united, 1 bonds unwrapped.
+      - Molecule C2F5H[250] united, 5 bonds unwrapped.
+      - Molecule C2F5H[258] united, 1 bonds unwrapped.
+      - Molecule C2F5H[266] united, 1 bonds unwrapped.
+      - Molecule C2F5H[269] united, 4 bonds unwrapped.
+      - Molecule C2F5H[275] united, 1 bonds unwrapped.
+      - Molecule C2F5H[280] united, 2 bonds unwrapped.
+      - Molecule C2F5H[286] united, 4 bonds unwrapped.
+      - Molecule C2F5H[295] united, 1 bonds unwrapped.
+      - Molecule C2F5H[298] united, 1 bonds unwrapped.
+      - Molecule C2F5H[310] united, 3 bonds unwrapped.
+      - Molecule C2F5H[324] united, 1 bonds unwrapped.
+      - Molecule C2F5H[325] united, 4 bonds unwrapped.
+      - Molecule C2F5H[338] united, 1 bonds unwrapped.
+      - Molecule C2F5H[358] united, 3 bonds unwrapped.
+      - Molecule C2F5H[372] united, 1 bonds unwrapped.
+      - Molecule C2F5H[390] united, 4 bonds unwrapped.
+      - Molecule C2F5H[391] united, 1 bonds unwrapped.
+      - Molecule C2F5H[396] united, 3 bonds unwrapped.
+      - Molecule C2F5H[403] united, 5 bonds unwrapped.
+      - Molecule C2F5H[424] united, 4 bonds unwrapped.
+      - Molecule C2F5H[429] united, 2 bonds unwrapped.
+      - Molecule C2F5H[434] united, 2 bonds unwrapped.
+      - Molecule C2F5H[448] united, 2 bonds unwrapped.
+      - Molecule C2F5H[449] united, 1 bonds unwrapped.
+      - Molecule C2F5H[451] united, 4 bonds unwrapped.
+      - Molecule C2F5H[454] united, 3 bonds unwrapped.
+      - Molecule C2F5H[458] united, 4 bonds unwrapped.
+      - Molecule C2F5H[463] united, 2 bonds unwrapped.
+      - Molecule C2F5H[470] united, 1 bonds unwrapped.
+      - Molecule C2F5H[497] united, 2 bonds unwrapped.
+      - Molecule C2F5H[504] united, 3 bonds unwrapped.
+      - Molecule C2F5H[512] united, 2 bonds unwrapped.
+      - Molecule C2F5H[515] united, 4 bonds unwrapped.
+      - Molecule C2F5H[525] united, 1 bonds unwrapped.
+      - Molecule C2F5H[535] united, 3 bonds unwrapped.
+      - Molecule C2F5H[550] united, 2 bonds unwrapped.
+      - Molecule C2F5H[557] united, 2 bonds unwrapped.
+      - Molecule C2F5H[575] united, 5 bonds unwrapped.
+      - Molecule C2F5H[586] united, 1 bonds unwrapped.
+      - Molecule C2F5H[594] united, 4 bonds unwrapped.
+      - Molecule C2F5H[596] united, 1 bonds unwrapped.
+      - Molecule C2F5H[602] united, 1 bonds unwrapped.
+      - Molecule C2F5H[606] united, 4 bonds unwrapped.
+
+    Determining maximum molecular diameters...
+
+    Found the following maximal molecular diameters:
+
+      (*) Molecule 1 (C4F9O3S):    733.48 pm
+
+      (*) Molecule 2 (C5F9HO2):    761.45 pm
+
+      (*) Molecule 3 (C16H36N):   1220.17 pm
+
+      (*) Molecule 4 (C2F5H):      389.11 pm
+
+
+    The atoms are currently ordered by topological priority.
+
+    Defining virtual atom #1 as molecular Center of Geometry:
+      - C4F9O3S...
+      - C5F9HO2...
+      - C16H36N...
+      - C2F5H...
+
+    Defining virtual atom #2 as molecular Center of Mass:
+      - C4F9O3S...
+      - C5F9HO2...
+      - C16H36N...
+      - C2F5H...
+
+    Defining molecular dipole vectors:
+
+      The last virtual atom of each molecule is defined as the tip of the dipole vector
+      starting in center of mass (#2). 1 Debye corresponds to 100 pm of vector length.
+      Only useful if dipole/charge data is provided. Otherwise vector has always length of zero.
+
+      - Dipole vector #2 --> #3 in C4F9O3S ...
+      - Dipole vector #2 --> #3 in C5F9HO2 ...
+      - Dipole vector #2 --> #3 in C16H36N ...
+      - Dipole vector #2 --> #3 in C2F5H ...
+
+>>> 12 virtual atoms have been defined: >>>
+
+    #1 in C4F9O3S: Center of Geometry.
+    #2 in C4F9O3S: Center of Mass.
+
+    #3 in C4F9O3S - tip of molecular dipole vector starting in #2.
+
+    #1 in C5F9HO2: Center of Geometry.
+    #2 in C5F9HO2: Center of Mass.
+
+    #3 in C5F9HO2 - tip of molecular dipole vector starting in #2.
+
+    #1 in C16H36N: Center of Geometry.
+    #2 in C16H36N: Center of Mass.
+
+    #3 in C16H36N - tip of molecular dipole vector starting in #2.
+
+    #1 in C2F5H: Center of Geometry.
+    #2 in C2F5H: Center of Mass.
+
+    #3 in C2F5H - tip of molecular dipole vector starting in #2.
+
+<<< End of virtual atoms <<<
+
+
+>>> List of functions <<<
+
+ *** Static (time independent) Functions
+ cdf      - Combined Distribution Function
+ rdf      - Radial Distribution Function
+ adf      - Angular Distribution Function
+ ddf      - Dihedral Distribution Function
+ pldf     - Point-Plane Distance Distribution
+ lidf     - Point-Line Distance Distribution
+ plproj   - Plane Projection Distribution
+ dprof    - Fixed Plane Density Profile
+ fpp      - Fixed Plane Projection
+ dens     - Density Distribution Function
+ sdf      - Spatial Distribution Function
+ psdf     - Pseudo SDF (only 2 ref. atoms)
+ dip      - Dipole Distribution Function
+ cond     - Evaluate Structural Condition
+ sfac     - Compute Structure Factor
+ agtopo   - Aggregation Topology Analysis
+ sankey   - Sankey diagram plot
+ cmat     - Contact Matrix / Connection Matrix
+ geodens  - Particle Density inside Geometric Object
+
+ *** Dynamic (time dependent) Functions
+ vdf      - Velocity Distribution Function
+ fdf      - Force Distribution Function
+ msd      - Mean Square Displacement / Diffusion Coefficients
+ acf      - Velocity Autocorrelation Functions
+ rdyn     - Vector Reorientation Dynamics
+ vhcf     - Van Hove Correlation Function
+ aggr     - Aggregation Functions (DACF, DLDF, DDisp)
+ hbond    - Hydrogen Bond Dynamics
+ ionpair  - Diffusion Corrected Ion Pair Dynamics
+ tddf     - Time Dependent Distribution Functions
+
+ *** Spectroscopic Functions
+ spec     - New Spectroscopy Module (IR, Raman, VCD, ROA)
+ power    - Calculate Power Spectrum
+ nc       - Normal Coordinate Analysis
+ ir       - (old) Calculate IR Spectrum
+ raman    - (old) Calculate Raman Spectrum
+ vcd      - (old) Calculate VCD Spectrum
+ rera     - Calculate Resonance Raman Spectrum
+ drst     - Save Dipole Restart File
+ mrst     - Save Magnetic Moment Restart File
+ pol      - Set up Polarizability Calculation
+
+ *** Miscellaneous Functions
+ env      - Save Trajectory of RM Environment / TDO Plot
+ proc     - Save Processed Trajectory
+ cut      - Cut Clusters
+ reg      - Region-specific Analysis
+ chi      - Chirality Analysis
+ eck      - Transform to Eckart Frame
+ swan     - Sort Wannier Centers
+ voro     - Basic Voronoi Analysis
+ vori     - Voronoi Integration Functions
+ vorochg  - Voronoi Charge Optimization
+ doma     - Domain Analysis
+ order    - Order Parameters
+ hole     - Hole Theory based Analysis
+ cla      - Cluster Analysis
+
+   (You may specify multiple analyses at once, but
+    the safe way is to perform only one kind of analysis at a time.)
+
+    Which functions to compute (comma separated)? cdf
+
+ cdf     - Combined Distribution Function
+
+    The advanced mode includes some options which are quite powerful,
+    yet possibly weird or seldomly required.
+
+    Use the advanced mode for the main part (y/n)? [no] <RETURN>
+
+*** Combined Distribution Function
+
+    How many channels should the Combined Distribution Function have? [2] <RETURN>
+    Choose from these functions: rdf, adf, ddf, dip, vdf, pldf, lidf
+    Channel 1: Enter function type (e.g. rdf): rdf
+    Channel 2: Enter function type (e.g. rdf): adf
+
+    Which of the molecules should be the reference molecule (C4F9O3S=1, C5F9HO2=2, C16H36N=3, C2F5H=4)? 4
+
+    C2F5H is the reference molecule.
+
+
+>>> Observation 1 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] <RETURN>
+
+    Please note: Although you specified this observation to be intermolecular, you may of course
+                 choose atoms from RM only (or OM only), which will yield an intramolecular quantity.
+
+    Switch on the "advanced mode" to perform a three-body analysis.
+
+    Which molecule should be observed (C4F9O3S=1, C5F9HO2=2, C16H36N=3, C2F5H=4)? 1
+
+>>> Combined Distribution Function >>>
+
+### Channel 1 ###
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM C2F5H (0) or from OM C4F9O3S (1)? [0] <RETURN>
+    Take observed atom(s) from RM C2F5H (0) or from OM C4F9O3S (1)? [1] <RETURN>
+
+    Which atom(s) to take from RM C2F5H (e.g. "C1,C3-5,H", "*"=all)? [#2] C2
+    Which atom(s) to take from OM C4F9O3S (e.g. "C1,C3-5,H", "*"=all)? [#2] O1
+    This yields in 1 combinations.
+
+    The smallest periodic cell half diameter is 3674.76 pm. You can compute meaningful RDFs up to this distance.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1000.0] <RETURN>
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [300] <RETURN>
+    Correct radial distribution for this RDF (y/n)? [yes] <RETURN>
+
+<<< End of Radial Distribution Function <<<
+
+
+### Channel 2 ###
+
+>>> Angular Distribution Function >>>
+
+    Should the 1. vector depict position (1), dipole (2), velocity (3) or force (4)? [1] <RETURN>
+
+    Please note: The last virtual atom (e.g., #3) of each molecule is defined as the tip of the
+    molecular dipole vector starting from molecular center of mass (i.e., #2). So you can involve the
+    dipole vector in any analysis. 1 Debye corresponds to 100 pm length of the vector.
+
+    Should the 2. vector depict position (1), dipole (2), velocity (3) or force (4)? [1] <RETURN>
+
+    Should the 1. vector connect 2 points (0) or stand perpendicular to 3 points (1)? [0] <RETURN>
+
+    Take atom(s) at the base point from RM C2F5H (0) or from OM C4F9O3S (1)? [0] <RETURN>
+      Please enter the atom(s) at the base point (e.g. C7): C2
+    Take atom(s) at the tip point from RM C2F5H (0) or from OM C4F9O3S (1)? [0] <RETURN>
+      Please enter the atom(s) at the tip point (e.g. C7): H1
+
+    Should the 2. vector connect 2 points (0) or stand perpendicular to 3 points (1)? [0] <RETURN>
+
+    Take atom(s) at the base point from RM C2F5H (0) or from OM C4F9O3S (1)? [1] 0
+      Please enter the atom(s) at the base point (e.g. C7): C2
+    Take atom(s) at the tip point from RM C2F5H (0) or from OM C4F9O3S (1)? [1] <RETURN>
+      Please enter the atom(s) at the tip point (e.g. C7): O1
+
+    Enter minimal angle between the vectors: [0 deg] <RETURN>
+    Enter maximal angle between the vectors: [180 deg] <RETURN>
+    Please enter the resolution (bin count) for this ADF: [100] <RETURN>
+    Apply cone correction (y/n)? [yes] <RETURN>
+
+<<< End of Angular Distribution Function <<<
+
+
+    Please enter the resolution (bin count) for CDF channel 1 (RDF): [100] <RETURN>
+    Please enter the resolution (bin count) for CDF channel 2 (ADF): [100] <RETURN>
+
+    Using 1 combination for each RM-OM pair.
+
+    Write out +/- correlation plot for this CDF (y/n)? [no] <RETURN>
+
+<<< End of Combined Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] <RETURN>
+    Add a condition to this observation (y/n)? [no] <RETURN>
+
+<<< End of Observation 1 <<<
+
+    Add another observation (y/n)? [no] <RETURN>
+
+>>> Observation List >>>
+
+  *** Observation 1
+    - Combined Distribution Function:
+      - Channel 1: RDF: C2F5H_C4F9O3S_[C2r_O1o]
+      - Channel 2: ADF: C2F5H_C4F9O3S_[C2r_H1r]-[C2r_O1o]
+
+<<< End of Observation List <<<
+
+
+    Not wrapping molecules into the box.
+
+    Not removing center of mass movement of the box.
+
+    Skip repeated time steps (y/n)? [no] <RETURN>
+    In which trajectory frame to start processing the trajectory? [1] <RETURN>
+    How many trajectory frames to read (from this position on)? [all] <RETURN>
+    Use every n-th read trajectory frame for the analysis: [1] <RETURN>
+
+    Using 3601 time steps: Every 1st within range 1 - approx. 3601.
+
+########## All information collected ##########
+
+>>> Initialization >>>
+
+Initializing observation 1...
+  Creating RDF...
+  Creating ADF...
+  Creating CDF...
+
+<<< End of Initialization <<<
+
+
+##########   Starting Main Pass   ##########
+
+Hint: Press CTRL+C once to softly interrupt analysis and still write the results.
+      Creating an empty file named EXIT ("touch EXIT") has the same effect.
+
+Step      0 ..................................................
+Step     50 .................................................. ETA  3m40s
+Step    300 .................................................. ETA  3m19s
+Step    550 .................................................. ETA  3m02s
+Step    800 .................................................. ETA  2m45s
+Step   1050 .................................................. ETA  2m28s
+Step   1300 .................................................. ETA  2m12s
+Step   1550 .................................................. ETA  1m56s
+Step   1800 .................................................. ETA  1m39s
+Step   2050 .................................................. ETA  1m23s
+Step   2300 .................................................. ETA  1m07s
+Step   2550 .................................................. ETA 51s
+Step   2800 .................................................. ETA 35s
+Step   3050 .................................................. ETA 19s
+Step   3300 .................................................. ETA  3s
+Step   3550 ...........
+End of trajectory file reached.
+
+
+##########   Main pass done   ##########
+
+3601 time steps processed.
+
+
+
+    Finishing analyses:
+----------------------------------------------------------------------------------------------------------
+
+
+>>> Observation 1 >>>
+
+* Angular Distribution Function
+    552753500 bin entries, 0 out of bin range (0.00 percent).
+    Max. bin entry: 8.670622E+06  -->  EPS: 1.862645E-09
+    Mean value:    89.9672 degree    Standard deviation:    39.2015 degree
+    Min. value: 0.00546934 degree    Max. value:            179.989 degree
+    Applying cone correction...
+    Saving ADF as adf_C2F5H_C4F9O3S_[C2r_H1r]-[C2r_O1o].csv ...
+    Saving ADF AGR file as "adf_C2F5H_C4F9O3S_[C2r_H1r]-[C2r_O1o].agr"...
+
+* Radial Distribution Function
+    5461374 bin entries, 547292126 out of bin range (99.01 percent).
+    Max. bin entry: 6.517836E+04  -->  EPS: 7.275958E-12
+    Mean value:       3539 pm    Standard deviation:    1021.96 pm
+    Min. value:    277.166 pm    Max.value:             6380.73 pm
+    Scaling RDF to uniform density ...
+    Correcting radial distribution...
+    Performing automatic peak detection...
+    >>> Peak Data >>>
+      1. maximum at  351.67 pm, height  2.0480
+      1. minimum at  461.67 pm, height  0.6282,  0.1969 particles in 1. solvation shell.
+      2. maximum at  565.00 pm, height  0.9793
+    <<< Peak Data <<<
+    Saving RDF as "rdf_C2F5H_C4F9O3S_[C2r_O1o].csv"...
+      Note: The third column of the text file contains the number integral / coordination number.
+    Saving RDF AGR file as "rdf_C2F5H_C4F9O3S_[C2r_O1o].agr"...
+
+* Combined Distribution Function (2D)
+    5461374 bin entries, 547292126 out of bin range (99.01 percent).
+    Max. bin entry: 3.307209E+03  -->  EPS: 4.547474E-13
+    Correcting radial distribution for CDF channel 1...
+    Correcting angular distribution for CDF channel 2...
+    Normalizing integral value to 1000000.00.
+    Saving CDF triples as "cdf_2_rdf[C2r_O1o]_adf[C2r_H1r]-[C2r_O1o]_triples.csv"...
+    Saving CDF matrix as "cdf_2_rdf[C2r_O1o]_adf[C2r_H1r]-[C2r_O1o]_matrix.csv"...
+    Saving CDF Mathematica Notebook as "cdf_2_rdf[C2r_O1o]_adf[C2r_H1r]-[C2r_O1o].nb"...
+       CreateTicks(): Optimizing axis ticks for range 0 - 1000...
+          Using 6 major ticks: 0, 200, 400, 600, 800, 1000.
+          Using 1 minor ticks per major tick: 0, (100), 200.
+       CreateTicks(): Optimizing axis ticks for range 0 - 180...
+          Using 5 major ticks: 0, 45, 90, 135, 180.
+          Using 2 minor ticks per major tick: 0, (15), (30), 45.
+    Saving CDF Gnuplot Input as "cdf_2_rdf[C2r_O1o]_adf[C2r_H1r]-[C2r_O1o].gp"...
+       CreateTicks(): Optimizing axis ticks for range 0 - 1000...
+          Using 6 major ticks: 0, 200, 400, 600, 800, 1000.
+          Using 1 minor ticks per major tick: 0, (100), 200.
+       CreateTicks(): Optimizing axis ticks for range 0 - 180...
+          Using 5 major ticks: 0, 45, 90, 135, 180.
+          Using 2 minor ticks per major tick: 0, (15), (30), 45.
+    Saving combined plot AGR file as "cdf_2_rdf[C2r_O1o]_adf[C2r_H1r]-[C2r_O1o]_combined.agr"...
+
+
+----------------------------------------------------------------------------------------------------------
+    Finished all analyses.
+
+
+    Analysis was running for 0h 3m 50s.
+      (15.657 steps per second)
+
+
+    Note: To show a list of all persons who contributed to TRAVIS,
+          please add "-credits" to your command line arguments, or set the
+          variable "SHOWCREDITS" to "TRUE" in your travis.conf file.
+
+    Source code from other projects used in TRAVIS:
+      - lmfit     from Joachim Wuttke
+      - kiss_fft  from Mark Borgerding
+      - voro++    from Chris Rycroft
+
+    http://www.travis-analyzer.de
+
+    Please cite all of the following articles for the analyses you have used:
+
+  * For TRAVIS in general:
+
+    "TRAVIS - A Free Analyzer for Trajectories from Molecular Simulation",
+    M. Brehm, M. Thomas, S. Gehrke, B. Kirchner; J. Chem. Phys. 2020, 152 (16), 164105.   (DOI 10.1063/5.0005078 )
+
+    "TRAVIS - A Free Analyzer and Visualizer for Monte Carlo and Molecular Dynamics Trajectories",
+    M. Brehm, B. Kirchner; J. Chem. Inf. Model. 2011, 51 (8), pp 2007-2023.   (DOI 10.1021/ci200217w )
+
+*** The End ***
+

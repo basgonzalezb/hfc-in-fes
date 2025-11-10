@@ -1,0 +1,5 @@
+; created by fftool; mix = g
+
+[ atomtypes ]
+; name  at.nr     mass   charge  ptype  sigma        epsilon
+Br         35  79.9040  -1.0000      A  4.62376e-01  3.76560e-01

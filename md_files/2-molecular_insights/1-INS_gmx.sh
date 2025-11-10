@@ -10,7 +10,7 @@ GMX=gmx_mpi
 HOME=`pwd`
 MDP=$HOME/mdp
 
-for system in {3..27..3}
+for system in {4..36..4}
 do
 	cd $HOME/MD/${system}
 	SYSTEM=`pwd`

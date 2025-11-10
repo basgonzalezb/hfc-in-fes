@@ -1,0 +1,96 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Jul 27 2023 15:54:05
+! Source code version: Jul 29 2022
+! Input file written at Tue Apr  8 17:05:47 2025.
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+! Use these values (y) or enter different values (n)? [yes] 
+
+! Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] 
+
+! Create images of the structural formulas (y/n)? [no] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Which functions to compute (comma separated)?
+cdf
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! How many channels should the Combined Distribution Function have? [2] 
+
+! Channel 1: Enter function type (e.g. rdf): 
+rdf
+! Channel 2: Enter function type (e.g. rdf): 
+adf
+! Which of the molecules should be the reference molecule (C8F17O3S=1, C5F9HO2=2, C6H11N2=3, C2F4H2=4)? 
+4
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Which molecule should be observed (C8F17O3S=1, C5F9HO2=2, C6H11N2=3, C2F4H2=4)? 
+1
+! Take reference atom(s) from RM C2F4H2 (0) or from OM C8F17O3S (1)? [0] 
+
+! Take observed atom(s) from RM C2F4H2 (0) or from OM C8F17O3S (1)? [1] 
+
+! Which atom(s) to take from RM C2F4H2 (e.g. "C1,C3-5,H", "*"=all)? [#2]
+C2
+! Which atom(s) to take from OM C8F17O3S (e.g. "C1,C3-5,H", "*"=all)? [#2]
+O1
+! Enter the maximal radius of this RDF (in pm): [1000.0] 
+
+! Enter the resolution (bin count) for this RDF: [300] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Should the 1. vector depict position (1), dipole (2), velocity (3) or force (4)? [1] 
+
+! Should the 2. vector depict position (1), dipole (2), velocity (3) or force (4)? [1] 
+
+! Should the 1. vector connect 2 points (0) or stand perpendicular to 3 points (1)? [0] 
+
+! Take atom(s) at the base point from RM C2F4H2 (0) or from OM C8F17O3S (1)? [0] 
+
+! Please enter the atom(s) at the base point (e.g. C7):
+C2
+! Take atom(s) at the tip point from RM C2F4H2 (0) or from OM C8F17O3S (1)? [0] 
+
+! Please enter the atom(s) at the tip point (e.g. C7):
+H1
+! Should the 2. vector connect 2 points (0) or stand perpendicular to 3 points (1)? [0] 
+
+! Take atom(s) at the base point from RM C2F4H2 (0) or from OM C8F17O3S (1)? [1] 
+0
+! Please enter the atom(s) at the base point (e.g. C7):
+C2
+! Take atom(s) at the tip point from RM C2F4H2 (0) or from OM C8F17O3S (1)? [1] 
+
+! Please enter the atom(s) at the tip point (e.g. C7):
+O1
+! Enter minimal angle between the vectors: [0 deg] 
+
+! Enter maximal angle between the vectors: [180 deg] 
+
+! Please enter the resolution (bin count) for this ADF: [100] 
+
+! Apply cone correction (y/n)? [yes] 
+
+! Please enter the resolution (bin count) for CDF channel 1 (RDF): [100] 
+
+! Please enter the resolution (bin count) for CDF channel 2 (ADF): [100] 
+
+! Write out +/- correlation plot for this CDF (y/n)? [no] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+
+! Skip repeated time steps (y/n)? [no] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+

@@ -1,0 +1,76 @@
+                      :-) GROMACS - gmx grompp, 2021.3 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.3
+Executable:   /opt/gromacs-2021.3/bin/gmx_mpi
+Data prefix:  /opt/gromacs-2021.3
+Working dir:  /home/bach/bastian/2_fdes_transport/3_diffusivity/MD/27/run_3/1_min
+Command line:
+  gmx_mpi grompp -f min.mdp -c ../0_initial/init.gro -p /home/bach/bastian/2_fdes_transport/3_diffusivity/MD/27/system.top -o min.tpr
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group rest is 55435.00
+
+GROMACS reminds you: "I Don't Want to Calm Down" (Throwing Muses)
+
+Setting the LD random seed to -1276162049
+
+Generated 153 of the 153 non-bonded parameter combinations
+
+Generated 153 of the 153 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'TBP'
+
+turning all bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'BR'
+
+turning all bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'PFPA'
+
+turning all bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'RE4a'
+
+turning all bonds into constraints...
+Analysing residue names:
+There are:  1364      Other residues
+There are:   250        Ion residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 60x60x60, spacing 0.118 0.118 0.118
+
+Estimate for the relative computational load of the PME mesh part: 0.19
+
+This run will generate roughly 2 Mb of data

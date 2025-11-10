@@ -1,0 +1,12 @@
+; created by fftool
+; sigma scaled by 1.04, epsilon scaled by 0.97
+
+[ atomtypes ]
+; name  at.nr     mass   charge  ptype  sigma        epsilon
+CTF         6  12.0110   0.0000      A  0.36400    0.26786
+CSF         6  12.0110   0.0000      A  0.36400    0.26786
+CF3         6  12.0110   0.0000      A  0.36400    0.26786
+SO         16  32.0660   0.0000      A  0.36920    1.01462
+OS3         8  15.9990   0.0000      A  0.32760    0.81224
+F           9  18.9980   0.0000      A  0.30680    0.21534
+FC1         9  18.9980   0.0000      A  0.30680    0.21534

@@ -1,0 +1,29 @@
+;; F-Gases Proyect 
+;; Date:2025-04-24 17:08:40.322845
+
+ [ defaults ] 
+;nbfunc comb-rule gen-pairs fudgeLJ fudgeQQ 
+ 1           3        yes        0.5     0.5 
+
+; Include atomtypes 
+#include "PWD/ff/TBP_atoms.itp"
+#include "PWD/ff/BR_atoms.itp"
+#include "PWD/ff/PFPA_atoms.itp"
+#include "PWD/ff/RE4a_atoms.itp"
+
+; ; Include molecules 
+#include "PWD/ff/TBP.itp"
+#include "PWD/ff/BR.itp"
+#include "PWD/ff/PFPA.itp"
+#include "PWD/ff/RE4a.itp"
+
+ [ system ] 
+; Name 
+TBP BR PFPA (1:2) + R134a (0.45)
+
+[ molecules ] 
+; Compound        #mols 
+TBP            250
+BR             250
+PFPA           500
+RE4a           614

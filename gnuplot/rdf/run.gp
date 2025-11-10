@@ -37,8 +37,8 @@ do for [i=1:3] {
   set term epslatex size 8cm,6cm fontscale 0.75
   set output "figures/rdf_components-".HFC[i].".tex"
   plot \
-    for [j=1:3] MDYN.HFC[i]."_".DES[j].".txt" skip 1 u 1:2 w lp lc rgb COLORS[j] pt -1 dt 1 lw LW ,\
-    for [j=1:3] MDYN.HFC[i]."_".DES[j].".txt" skip 1 u 1:3 w lp lc rgb COLORS[j] pt -1 dt 3 lw LW
+    for [j=1:3] MDYN.HFC[i]."_".DES[j].".out" skip 1 u 1:2 w lp lc rgb COLORS[j] pt -1 dt 1 lw LW ,\
+    for [j=1:3] MDYN.HFC[i]."_".DES[j].".out" skip 1 u 1:3 w lp lc rgb COLORS[j] pt -1 dt 3 lw LW
   unset term
   unset output
   replot
@@ -48,7 +48,7 @@ do for [i=1:3] {
   set term epslatex size 8cm,6cm fontscale 0.75
   set output "figures/rdf-".HFC[i]."-".HFC[i].".tex"
   plot \
-    for [j=1:3] MDYN.HFC[i]."_".DES[j].".txt" skip 1 u 1:5 w lp lc rgb COLORS[j]    pt -1 dt 1 lw LW
+    for [j=1:3] MDYN.HFC[i]."_".DES[j].".out" skip 1 u 1:5 w lp lc rgb COLORS[j]    pt -1 dt 1 lw LW
   unset term
   unset output
   replot

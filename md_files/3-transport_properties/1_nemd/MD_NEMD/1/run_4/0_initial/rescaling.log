@@ -1,0 +1,56 @@
+                     :-) GROMACS - gmx editconf, 2021.3 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx editconf, version 2021.3
+Executable:   /opt/gromacs-2021.3/bin/gmx_mpi
+Data prefix:  /opt/gromacs-2021.3
+Working dir:  /home/bach/bastian/2_fdes_transport/2_nemd/MD_NEMD/1/run_4/0_initial
+Command line:
+  gmx_mpi editconf -f init_unscaled.gro -o init.gro -box 6.60544 6.60544 6.60544 -c
+
+
+GROMACS reminds you: "The Wheels On the Bus Go Round and Round" (J. Richman)
+
+Note that major changes are planned in future for editconf, to improve usability and utility.
+Read 20500 atoms
+Volume: 287.271 nm^3, corresponds to roughly 129200 electrons
+No velocities found
+    system size :  6.598  6.598  6.598 (nm)
+    center      :  3.287  3.306  3.304 (nm)
+    box vectors :  6.598  6.598  6.598 (nm)
+    box angles  :  90.00  90.00  90.00 (degrees)
+    box volume  : 287.27               (nm^3)
+    shift       :  0.016 -0.003 -0.001 (nm)
+new center      :  3.303  3.303  3.303 (nm)
+new box vectors :  6.605  6.605  6.605 (nm)
+new box angles  :  90.00  90.00  90.00 (degrees)
+new box volume  : 288.21               (nm^3)
