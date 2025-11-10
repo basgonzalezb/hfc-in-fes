@@ -1,5 +1,0 @@
-[ atomtypes ]
-; name  at.nr     mass    charge  ptype  sigma     epsilon
-E5F         9  18.9984     0.000      A  0.292000  0.203704
-E5C         6  12.0110     0.000      A  0.360000  0.390780
-E5H         1   1.0080     0.000      A  0.250000  0.083145

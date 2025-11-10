@@ -1,8 +1,0 @@
-; from https://doi.org/10.1016/j.theochem.2005.05.017
-
-[ atomtypes ]
-; name  at.nr     mass   charge  ptype  sigma        epsilon
-HBD_CT      6  12.0110   0.1450      A  0.350        0.276144
-HBD_HC      1   1.0080   0.0600      A  0.250        0.125520
-HBD_OH      8   15.999  -0.7000      A  0.307        0.711280
-HBD_HO      1   1.0080   0.4350      A  0.000        0.000000
